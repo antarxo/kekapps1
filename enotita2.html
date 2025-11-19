@@ -6,21 +6,21 @@
   <title>Social Media — Περίληψη Κεφαλαίου 2</title>
   <style>
     :root{
-      --bg:#f4f6fb;
+      --bg:#f5f3ff;
       --card:#ffffff;
-      --accent:#1d4ed8;     /* ελαφρά αλλαγή χρωμάτων σε πιο μπλε */
-      --accent-2:#1e40af;
+      --accent:#7c3aed;
+      --accent-2:#5b21b6;
       --muted:#6b7280;
       --maxw:900px;
       --radius:14px;
-      --glass: rgba(37,99,235,0.06);
-      --shadow: 0 6px 24px rgba(15,23,42,0.10);
+      --glass: rgba(124,58,237,0.07);
+      --shadow: 0 6px 24px rgba(30,27,75,0.14);
     }
     html,body{height:100%;}
     body{
       margin:0;
       font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      background: linear-gradient(180deg,var(--bg),#e5edff);
+      background: radial-gradient(circle at top, #e9ddff, var(--bg));
       color:#0f1724;
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale;
@@ -31,299 +31,84 @@
     }
     .wrap{ width:100%; max-width:var(--maxw); }
     header.site{
-      background: linear-gradient(90deg,var(--accent),var(--accent-2));
+      background: linear-gradient(120deg,var(--accent),var(--accent-2));
       color:#fff; padding:20px; border-radius:var(--radius); box-shadow:var(--shadow); margin-bottom:18px;
     }
     header h1{margin:0;font-size:1.25rem;letter-spacing:0.2px}
     header p{margin:6px 0 0;font-size:0.9rem;opacity:0.92}
     main.card{ background:var(--card); border-radius:var(--radius); padding:18px; box-shadow:var(--shadow); }
     .meta{ display:flex; gap:12px; align-items:center; margin-bottom:12px; flex-wrap:wrap; }
-    .tag{ background:var(--glass); color:#1e3a8a; padding:6px 10px; border-radius:999px; font-size:0.85rem; font-weight:600; }
+    .tag{ background:var(--glass); color:var(--accent-2); padding:6px 10px; border-radius:999px; font-size:0.85rem; font-weight:600; }
     .intro{ font-size:0.98rem; color:var(--muted); margin-bottom:18px; }
     section{margin-bottom:18px;}
     h2{ color:var(--accent-2); margin:0 0 8px 0; font-size:1.05rem; }
-    h3{ margin:8px 0 6px 0; color:#0b3b6f; font-size:0.98rem }
+    h3{ margin:8px 0 6px 0; color:#312e81; font-size:0.98rem }
     p{margin:8px 0;font-size:0.95rem;color:#0f1724}
     ul{margin:8px 0 8px 18px}
     li{margin:6px 0}
-    .callout{ border-left:4px solid var(--accent); background:#f5f7ff; padding:12px 14px; border-radius:8px; margin:12px 0; color:#111827; }
+    .callout{ border-left:4px solid var(--accent); background:#f8f5ff; padding:12px 14px; border-radius:8px; margin:12px 0; color:#111827; }
     .two-col{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
     @media (max-width:720px){ .two-col{grid-template-columns:1fr} header h1{font-size:1.1rem} }
     @media print{ body{background:white;padding:6mm} header, .card{box-shadow:none} .tag{display:none} }
     .small{font-size:0.86rem;color:var(--muted)}
     .foot{margin-top:10px;font-size:0.82rem;color:var(--muted)}
-    .quote{font-style:italic;color:#1d3557;background:linear-gradient(90deg,rgba(37,99,235,0.05),transparent);padding:10px;border-radius:8px}
-    .back-button{
-      display:inline-block;
-      margin:8px 0 16px;
-      font-size:0.9rem;
-      text-decoration:none;
-      color:var(--accent-2);
-    }
-    /* Q&A */
-    .qa{border-top:1px solid #e5e7eb;padding-top:10px}
+    .quote{font-style:italic;color:#1f2933;background:linear-gradient(90deg,rgba(124,58,237,0.06),transparent);padding:10px;border-radius:8px}
+    .back-button{display:inline-block;margin-top:6px;font-size:0.9rem;text-decoration:none;color:var(--accent-2)}
+
+    .qa{border-top:1px solid #e5e7eb;padding-top:10px;margin-top:10px}
     .q{font-weight:600;margin-top:10px}
-    .ans{margin-top:4px;padding:8px 10px;border-radius:10px;background:#f3f4ff;border:1px solid #e0e7ff;font-size:0.9rem;color:#374151}
-    .why{color:#4b5563;font-size:0.88rem;margin-top:4px}
+    .ans{margin-top:6px;padding:8px 10px;border-radius:10px;background:#f6f4ff;border:1px solid #e3ddff}
+    .badge{display:inline-block;font-size:0.8rem;font-weight:700;padding:2px 8px;border-radius:999px;margin-right:8px}
+    .yes{background:#e0f7ec;color:#166534;border:1px solid #bbf7d0}
+    .no{background:#fee2e2;color:#991b1b;border:1px solid #fecaca}
+    .why{color:#374151;font-size:0.9rem;margin-top:4px}
   </style>
 </head>
 <body>
   <div class="wrap">
     <header class="site" role="banner">
       <h1>Social Media — Περίληψη Κεφαλαίου 2</h1>
-      <p>Εκτενής περίληψη: τι είναι τα μέσα κοινωνικής δικτύωσης, ποια τα χαρακτηριστικά, τα υπέρ και τα κατά τους, οι κατηγορίες και τα πιο δημοφιλή social.</p>
+      <p>Ορισμός, κατηγορίες, πλεονεκτήματα–μειονεκτήματα και βασικές πλατφόρμες, με link στις ερωτήσεις αυτοαξιολόγησης.</p>
     </header>
 
     <main class="card" role="main">
       <div class="meta">
         <div class="tag">Κεφάλαιο 2</div>
         <div class="small">Θέμα: Social Media</div>
-        <div class="small">Στόχος: Κατανόηση ρόλου, χαρακτηριστικών, χρήσεων & βασικών εργαλείων</div>
+        <div class="small">Εστίαση: ιστορία, κατηγορίες, πλατφόρμες, χρήση</div>
       </div>
 
       <p class="intro">
-        Η ενότητα «Social Media» χτίζει πάνω στο κεφάλαιο του Marketing και εστιάζει αποκλειστικά στα μέσα κοινωνικής δικτύωσης: τι είναι, ποια τα βασικά τους χαρακτηριστικά,
-        γιατί έχουν γίνει τόσο κεντρικά στη ζωή μας, ποια πλεονεκτήματα και μειονεκτήματα φέρνουν σε προσωπικό, εκπαιδευτικό και επαγγελματικό επίπεδο, ποιες κατηγορίες
-        social media υπάρχουν και ποια είναι τα πιο δημοφιλή μέσα σήμερα (Facebook, Instagram, YouTube, TikTok, κ.λπ.). 
+        Το κεφάλαιο τοποθετεί τα Social Media στο πλαίσιο της εξέλιξης του Διαδικτύου: από τους πρώτους ιστότοπους (όπως το
+        <code>info.cern.ch</code>) μέχρι τα σημερινά γιγαντιαία δίκτυα όπως το Facebook και το TikTok. Παρουσιάζονται
+        ορισμοί, κατηγορίες, πλεονεκτήματα/μειονεκτήματα, καθώς και βασικές πλατφόρμες (Facebook, Instagram, WhatsApp, Viber κ.ά.).
+        Οι ερωτήσεις στο τέλος «πιάνουν» ορισμούς, χρονολογίες, κυρίαρχα δίκτυα, καθώς και συγκεκριμένες εφαρμογές.
       </p>
-
       <a href="index.html" class="back-button">⟵ Επιστροφή στο μενού</a>
 
-      <!-- 2. Σκοπός / Προσδοκώμενα / Έννοιες-Κλειδιά -->
-      <section id="purpose">
-        <h2>Σκοπός & Προσδοκώμενα Αποτελέσματα</h2>
-        <p>
-          Σκοπός της ενότητας είναι ο ωφελούμενος:
-        </p>
-        <ul>
-          <li>Να γνωρίσει τα βασικά είδη και τις κύριες λειτουργίες των μέσων κοινωνικής δικτύωσης.</li>
-          <li>Να κατανοήσει τα χαρακτηριστικά που ξεχωρίζουν τα social media από τα «παραδοσιακά» μέσα επικοινωνίας.</li>
-          <li>Να αναγνωρίζει τα πλεονεκτήματα και τα μειονεκτήματα της συνεχούς χρήσης των social media, τόσο για ιδιωτική όσο και για επαγγελματική χρήση. :contentReference[oaicite:1]{index=1}</li>
-          <li>Να εξοικειωθεί με τις βασικές κατηγορίες Social Media (blogs, κοινωνικά δίκτυα, microblogs, media sharing, social bookmarking κ.ά.). </li>
-          <li>Να μπορεί να αναγνωρίσει και να περιγράψει τα πιο δημοφιλή μέσα κοινωνικής δικτύωσης και τις βασικές δυνατότητές τους.</li>
-        </ul>
-
-        <h3>Έννοιες-Κλειδιά</h3>
-        <ul>
-          <li>Social media / μέσα κοινωνικής δικτύωσης</li>
-          <li>Προφίλ, απόρρητο, κοινότητα</li>
-          <li>User-generated content (περιεχόμενο που δημιουργείται από τον χρήστη)</li>
-          <li>Πλεονεκτήματα / μειονεκτήματα χρήσης</li>
-          <li>Κατηγορίες social media (blog, κοινωνικό δίκτυο, microblog, media sharing, social bookmarking/news κ.λπ.)</li>
-          <li>Διαδικτυακό μάρκετινγκ μέσα από τα social media</li>
-        </ul>
-      </section>
-
-      <!-- 2.1 Εισαγωγή -->
-      <section id="intro">
-        <h2>2.1 Εισαγωγή στα Social Media</h2>
-        <p>
-          Η εισαγωγή τοποθετεί ιστορικά την εμφάνιση των social media και δείχνει πώς από τις πρώτες διαδικτυακές πλατφόρμες κοινωνικής δικτύωσης
-          φτάσαμε στο σημερινό περιβάλλον με δισεκατομμύρια ενεργούς λογαριασμούς. Αναφέρεται σε πρώιμες πλατφόρμες (όπως το Six Degrees, το Friendster, το MySpace)
-          και στη συνέχεια στη δυναμική άνοδο του Facebook, του Instagram και του Snapchat. :contentReference[oaicite:3]{index=3}
-        </p>
-        <p>
-          Σταδιακά, τα social media μετατράπηκαν από «παιχνίδι» για προσωπική δικτύωση σε βασική υποδομή επικοινωνίας, ενημέρωσης και προώθησης για οργανισμούς,
-          επιχειρήσεις και επαγγελματίες. Οι χρήστες δεν είναι πλέον παθητικοί δέκτες, αλλά δημιουργοί και διανομείς περιεχομένου.
-        </p>
-        <div class="callout">
-          <strong>Κεντρική ιδέα:</strong> τα social media άλλαξαν ριζικά τον τρόπο με τον οποίο οι άνθρωποι επικοινωνούν, ενημερώνονται, διασκεδάζουν και αγοράζουν —
-          ο καθένας είναι ταυτόχρονα «μέσο» και «κοινό».
-        </div>
-      </section>
-
-      <!-- 2.2 Ορισμός & Χαρακτηριστικά -->
       <section id="definition">
-        <h2>2.2 Ορισμός & Χαρακτηριστικά των Social Media</h2>
+        <h2>1. Ορισμός & Γενικά Χαρακτηριστικά των Social Media</h2>
         <p>
-          Τα social media παρουσιάζονται ως διαδικτυακά τεχνολογικά εργαλεία που επιτρέπουν στους χρήστες να αλληλεπιδρούν μέσω του Διαδικτύου,
-          να μοιράζονται και να ανταλλάσσουν πληροφορίες, εμπειρίες, απόψεις και πολυμεσικό περιεχόμενο (κείμενο, εικόνα, βίντεο, ήχο). 
+          Social Media είναι πλατφόρμες στο Διαδίκτυο που επιτρέπουν στους χρήστες να δημιουργούν προφίλ, να παράγουν
+          και να μοιράζονται περιεχόμενο (κείμενο, εικόνα, βίντεο, ήχο) και να αλληλεπιδρούν μεταξύ τους σε πραγματικό χρόνο.
         </p>
         <p>
-          Η δύναμή τους βρίσκεται στην ταχύτητα διάδοσης: μια ανάρτηση, ένα tweet ή ένα βίντεο στο YouTube μπορεί να γίνει ορατό σε εκατομμύρια χρήστες
-          μέσα σε λίγες ώρες, χωρίς το κλασικό κόστος των παραδοσιακών μέσων. Αυτό τα καθιστά ιδιαίτερα ελκυστικά για το μάρκετινγκ, αλλά και για την προσωπική
-          έκφραση και συμμετοχή σε δημόσιο διάλογο.
+          Τα βασικά χαρακτηριστικά περιλαμβάνουν:
         </p>
-
-        <h3>Προφίλ & Απόρρητο</h3>
-        <p>
-          Σχεδόν όλα τα social media λειτουργούν γύρω από την έννοια του «προφίλ»: μια σελίδα/λογαριασμό που συγκεντρώνει πληροφορίες για τον χρήστη
-          (όνομα, φωτογραφίες, ενδιαφέροντα, συνδέσεις με φίλους/επαφές). Το απόρρητο και οι ρυθμίσεις ιδιωτικότητας είναι κρίσιμα, καθώς καθορίζουν ποιος
-          βλέπει τι — από δημόσιες αναρτήσεις μέχρι περιεχόμενο μόνο για «φίλους».
-        </p>
-
-        <h3>Βασικά χαρακτηριστικά</h3>
         <ul>
-          <li><strong>Διαδραστικότητα</strong> — οι χρήστες σχολιάζουν, απαντούν, κάνουν like/share, δημιουργώντας διάλογο και όχι μονόδρομη επικοινωνία.</li>
-          <li><strong>Δικτύωση</strong> — δημιουργία ψηφιακών δικτύων φίλων, επαφών, followers, ομάδων και κοινοτήτων.</li>
-          <li><strong>Δημιουργία περιεχομένου</strong> — το μεγαλύτερο μέρος του περιεχομένου προέρχεται από τους ίδιους τους χρήστες.</li>
-          <li><strong>Ανοιχτή πρόσβαση</strong> — εύκολη είσοδος/χρήση από οποιονδήποτε έχει σύνδεση στο Διαδίκτυο.</li>
-          <li><strong>Άμεση διάχυση πληροφορίας</strong> — ταχύτητα μετάδοσης ειδήσεων, τάσεων, διαφημιστικών μηνυμάτων.</li>
+          <li><strong>Δημιουργία προφίλ</strong> με προσωπικά στοιχεία, φωτογραφίες, ενδιαφέροντα.</li>
+          <li><strong>Διασυνδεσιμότητα</strong> (δίκτυα «φίλων», «ακολούθων», «επαφών»).</li>
+          <li><strong>Δημιουργία & διαμοιρασμός περιεχομένου</strong> (posts, stories, βίντεο κ.λπ.).</li>
+          <li><strong>Διαδραστικότητα</strong> (likes, σχόλια, κοινοποιήσεις, αντιδράσεις).</li>
+          <li><strong>Κλίμακα & ταχύτητα διάδοσης</strong> — μηνύματα σε παγκόσμιο κοινό σε δευτερόλεπτα.</li>
         </ul>
-      </section>
-
-      <!-- 2.3 Πλεονεκτήματα - Μειονεκτήματα -->
-      <section id="pros-cons">
-        <h2>2.3 Πλεονεκτήματα & Μειονεκτήματα των Social Media</h2>
         <p>
-          Το κεφάλαιο αναλύει εκτενώς πώς τα μέσα κοινωνικής δικτύωσης επηρεάζουν την καθημερινότητα, την εκπαίδευση, τις επαγγελματικές σχέσεις
-          και την ψυχαγωγία. Η χρήση τους προσφέρει σημαντικές ευκαιρίες αλλά και κινδύνους, ειδικά όταν γίνεται υπερβολικά ή χωρίς κριτική σκέψη. 
+          Αυτή η βάση εξηγεί γιατί τα Social Media αντιμετωπίζονται ως ξεχωριστό αντικείμενο σε σχέση με το κλασικό web,
+          και γιατί στο κεφάλαιο επανέρχεται συνεχώς η ιδέα της «συμμετοχής» και της «συν-δημιουργίας» περιεχομένου.
         </p>
-
-        <div class="two-col">
-          <div>
-            <h3>Ενδεικτικά πλεονεκτήματα</h3>
-            <ul>
-              <li><strong>Εκπαιδευτική διαδικασία</strong>: διευκολύνουν την εξ αποστάσεως εκπαίδευση, τη συνεργασία μαθητών/εκπαιδευτικών και την ανταλλαγή υλικού.</li>
-              <li><strong>Συνδεσιμότητα</strong>: επιτρέπουν επικοινωνία με ανθρώπους σε όλο τον κόσμο, δημιουργία κοινοτήτων και ομάδων ενδιαφέροντος.</li>
-              <li><strong>Επαγγελματικές ευκαιρίες</strong>: πλατφόρμες όπως το LinkedIn ενισχύουν το networking, την αναζήτηση εργασίας και το προσωπικό branding.</li>
-              <li><strong>Διαδικτυακό μάρκετινγκ</strong>: χαμηλό κόστος προβολής, στοχευμένες διαφημίσεις και δυνατότητα μέτρησης αποτελεσμάτων.</li>
-              <li><strong>Άμεση ενημέρωση</strong>: πρόσβαση σε ειδήσεις, τάσεις και «ζωντανές» συζητήσεις σε πραγματικό χρόνο.</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Ενδεικτικά μειονεκτήματα</h3>
-            <ul>
-              <li><strong>Υπερβολική χρήση</strong>: σπατάλη χρόνου, εθισμός, μείωση παραγωγικότητας.</li>
-              <li><strong>Ζητήματα ιδιωτικότητας</strong>: διαρροή προσωπικών δεδομένων, έκθεση σε ανεπιθύμητο κοινό.</li>
-              <li><strong>Παραπληροφόρηση</strong>: ταχύτατη διάδοση ψευδών ή μη επαληθευμένων πληροφοριών.</li>
-              <li><strong>Κοινωνική πίεση</strong>: «πρότυπα» εικόνας, σύγκριση με άλλους, cyberbullying.</li>
-              <li><strong>Θόλωση ορίων προσωπικού/επαγγελματικού</strong>: δυσκολία διαχείρισης της δημόσιας εικόνας.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="callout">
-          <strong>Κλειδί:</strong> τα social media δεν είναι «καλά» ή «κακά» από μόνα τους· η αξία και ο κίνδυνος εξαρτώνται από τον τρόπο και τον σκοπό χρήσης τους.
-        </div>
       </section>
 
-      <!-- 2.4 Κατηγορίες -->
-      <section id="categories">
-        <h2>2.4 Κατηγορίες Social Media</h2>
+      <section id="history2">
+        <h2>2. Από τους πρώτους ιστότοπους στα σύγχρονα δίκτυα</h2>
         <p>
-          Τα μέσα κοινωνικής δικτύωσης ταξινομούνται σε κατηγορίες ανάλογα με τις δυνατότητες, τον τύπο περιεχομένου και τον τρόπο αλληλεπίδρασης των χρηστών. 
-        </p>
-
-        <h3>Βασικές κατηγορίες</h3>
-        <ul>
-          <li>
-            <strong>Blog</strong> (weblog) — ιστότοποι που διευκολύνουν συχνές ενημερώσεις/αναρτήσεις με σχόλια αναγνωστών.
-            Συχνά χρησιμοποιούνται ως «ημερολόγια» γνώμης ή εξειδικευμένα sites θεματικού περιεχομένου.
-          </li>
-          <li>
-            <strong>Κοινωνικό δίκτυο</strong> — πλατφόρμες εστιασμένες σε προσωπικά προφίλ και λίστες φίλων/επαφών
-            (π.χ. Facebook, LinkedIn).
-          </li>
-          <li>
-            <strong>Microblog</strong> — μορφή σύντομης δημοσίευσης (π.χ. Twitter/X), συχνά με περιορισμό χαρακτήρων,
-            γρήγορη, «στιγμιαία» ροή ενημέρωσης.
-          </li>
-          <li>
-            <strong>Media Sharing</strong> — υπηρεσίες διαμοιρασμού πολυμέσων (YouTube, Flickr, SlideShare κ.λπ.),
-            όπου κυρίαρχο ρόλο έχουν τα βίντεο, οι φωτογραφίες, οι παρουσιάσεις.
-          </li>
-          <li>
-            <strong>Social Bookmarking / Social News</strong> — πλατφόρμες μοίρασματος links/άρθρων, συχνά με σύστημα
-            αξιολόγησης/ψηφοφορίας και σχολίων.
-          </li>
-        </ul>
-      </section>
-
-      <!-- 2.5 Δημοφιλέστερα μέσα -->
-      <section id="popular-platforms">
-        <h2>2.5 Δημοφιλέστερα Μέσα Κοινωνικής Δικτύωσης</h2>
-        <p>
-          Η ενότητα αυτή κάνει «βόλτα» στα πιο σημαντικά social media σήμερα, περιγράφοντας σύντομα τι είναι, τι τα κάνει ιδιαίτερα και πώς χρησιμοποιούνται
-          από ιδιώτες και επιχειρήσεις. 
-        </p>
-
-        <ul>
-          <li><strong>Facebook</strong> — η πιο διαδεδομένη πλατφόρμα κοινωνικής δικτύωσης, με προφίλ, σελίδες, ομάδες, events και ισχυρό διαφημιστικό σύστημα.</li>
-          <li><strong>Instagram</strong> — οπτικοκεντρική πλατφόρμα με φωτογραφίες, stories και reels, ιδιαίτερα δημοφιλής σε νεότερες ηλικίες.</li>
-          <li><strong>YouTube</strong> — βασική πλατφόρμα βίντεο, τόσο για ψυχαγωγία όσο και για εκπαίδευση και προβολή επιχειρήσεων.</li>
-          <li><strong>Twitter/X</strong> — microblogging με σύντομα μηνύματα, έντονη χρήση σε ειδήσεις, πολιτική, real-time συζητήσεις.</li>
-          <li><strong>LinkedIn</strong> — επαγγελματικό κοινωνικό δίκτυο για βιογραφικά, networking, αγγελίες εργασίας και εταιρική παρουσία.</li>
-          <li><strong>TikTok</strong> — πλατφόρμα βίντεο μικρής διάρκειας, με αλγόριθμο που αναδεικνύει τάσεις και δημιουργούς πολύ γρήγορα.</li>
-          <li><strong>Snapchat, Pinterest, Flickr, WhatsApp, Viber</strong> — πλατφόρμες με πιο ειδική έμφαση (π.χ. ephemeral περιεχόμενο, pinboards, φωτογραφία, μηνύματα).</li>
-        </ul>
-      </section>
-
-      <!-- 2.6 Σύνοψη -->
-      <section id="recap">
-        <h2>2.6 Σύνοψη — Κύρια Σημεία</h2>
-        <ul>
-          <li>Τα social media είναι εργαλεία δικτύωσης, έκφρασης και επικοινωνίας, βασισμένα σε περιεχόμενο που δημιουργείται από τους ίδιους τους χρήστες.</li>
-          <li>Ορίζονται από χαρακτηριστικά όπως η διαδραστικότητα, η δημοσίευση/μοίρασμα περιεχομένου, η δημιουργία κοινοτήτων και η ταχύτατη διάδοση πληροφορίας.</li>
-          <li>Έχουν σημαντικά πλεονεκτήματα (εκπαίδευση, συνδεσιμότητα, μάρκετινγκ, ενημέρωση) αλλά και ουσιαστικά μειονεκτήματα (ιδιωτικότητα, παραπληροφόρηση, εθισμός).</li>
-          <li>Διακρίνονται σε κατηγορίες (blogs, κοινωνικά δίκτυα, microblogs, media sharing, social bookmarking/news κ.λπ.) με διαφορετικές χρήσεις.</li>
-          <li>Τα πιο δημοφιλή μέσα (Facebook, Instagram, YouTube, TikTok κ.ά.) έχουν ξεχωριστούς ρόλους, αλλά όλα λειτουργούν πάνω στην ίδια λογική κοινωνικής δικτύωσης.</li>
-        </ul>
-      </section>
-
-      <!-- 2.7 Ερωτήσεις κατανόησης -->
-      <section id="qa-ch2" class="qa">
-        <h2>2.7 Ερωτήσεις Κατανόησης — Κεφάλαιο 2 (Social Media)</h2>
-        <p class="small">
-          Διατύπωση ερωτήσεων σύμφωνα με το βιβλίο. Κάθε ερώτηση αφήνει χώρο για συμπλήρωση απάντησης και σύντομης αιτιολόγησης.
-        </p>
-
-        <!-- ερωτ.1 -->
-        <div class="q">
-          1. Ο πρώτος διαδικτυακός ιστότοπος κοινωνικής δικτύωσης είναι το ………
-          <br>Α. Friendster
-          <br>Β. Six Degrees
-          <br>Γ. My Space
-        </div>
-        <div class="ans">
-          <div class="why">Απάντηση: … — Σύντομη αιτιολόγηση: …</div>
-        </div>
-
-        <!-- ερωτ.2 -->
-        <div class="q">
-          2. Σύμφωνα με τα στοιχεία που συλλέχθηκαν το Δεκέμβριο του 2021,
-          ποιο είναι το πιο δημοφιλή μέσο κοινωνικής δικτύωσης;
-          <br>Α. Facebook
-          <br>Β. LinkedIn
-          <br>Γ. Twitter
-        </div>
-        <div class="ans">
-          <div class="why">Απάντηση: … — Σύντομη αιτιολόγηση: …</div>
-        </div>
-
-        <!-- ερωτ.3 -->
-        <div class="q">
-          3. Σύμφωνα με την B&amp;C, ο όρος «social media» πρωτοεμφανίστηκε το …., όταν το …… επινόησε την πρώτη του εφαρμογή κοινωνικής δικτύωσης.
-          <br>Α. 2005, Facebook
-          <br>Β. 2004, LinkedIn
-        </div>
-        <div class="ans">
-          <div class="why">Απάντηση: … — Σύντομη αιτιολόγηση: …</div>
-        </div>
-
-        <!-- ερωτ.4 -->
-        <div class="q">
-          4. Πως ονομάζεται το μέσο κοινωνικής δικτύωσης που έχει σχεδιαστεί για
-          να διευκολύνουν την προσθήκη νέων καταχωρίσεων;
-          <br>Α. Wiki
-          <br>Β. Podcast
-          <br>Γ. Blog
-        </div>
-        <div class="ans">
-          <div class="why">Απάντηση: … — Σύντομη αιτιολόγηση: …</div>
-        </div>
-
-        <!-- σχόλιο για πηγή ερωτήσεων -->
-        <!-- :contentReference[oaicite:8]{index=8} -->
-      </section>
-
-      <div class="foot">
-        2025 — Εκπαιδευτικό υλικό βασισμένο στο Κεφάλαιο 2 (Social Media) του προγράμματος
-        «Ψηφιακές δεξιότητες κοινωνικής δικτύωσης με εφαρμογές στο χώρο εργασίας».
-      </div>
-    </main>
-
-    <a href="index.html" class="back-button">⟵ Επιστροφή στο μενού</a>
-  </div>
-</body>
-</html>
+          Ιστορικά, η ανάπτυξη των Social Media πατάει πάνω στην εξέλιξη του ίδιου του
