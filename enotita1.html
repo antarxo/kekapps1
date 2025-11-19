@@ -6,21 +6,21 @@
   <title>Marketing — Περίληψη Κεφαλαίου 1</title>
   <style>
     :root{
-      --bg:#f4f6fb;
+      --bg:#f5f3ff;
       --card:#ffffff;
-      --accent:#1d4ed8;
-      --accent-2:#1e3a8a;
+      --accent:#6d28d9;
+      --accent-2:#4c1d95;
       --muted:#6b7280;
       --maxw:900px;
       --radius:14px;
-      --glass: rgba(29,78,216,0.06);
-      --shadow: 0 6px 24px rgba(15,23,42,0.12);
+      --glass: rgba(109,40,217,0.08);
+      --shadow: 0 6px 24px rgba(15,23,42,0.08);
     }
     html,body{height:100%;}
     body{
       margin:0;
       font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      background: radial-gradient(circle at top, #e0ebff, var(--bg));
+      background: linear-gradient(180deg,var(--bg),#f9fafb);
       color:#0f1724;
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale;
@@ -31,276 +31,257 @@
     }
     .wrap{ width:100%; max-width:var(--maxw); }
     header.site{
-      background: linear-gradient(120deg,var(--accent),var(--accent-2));
+      background: linear-gradient(90deg,var(--accent),var(--accent-2));
       color:#fff; padding:20px; border-radius:var(--radius); box-shadow:var(--shadow); margin-bottom:18px;
     }
     header h1{margin:0;font-size:1.25rem;letter-spacing:0.2px}
     header p{margin:6px 0 0;font-size:0.9rem;opacity:0.92}
     main.card{ background:var(--card); border-radius:var(--radius); padding:18px; box-shadow:var(--shadow); }
     .meta{ display:flex; gap:12px; align-items:center; margin-bottom:12px; flex-wrap:wrap; }
-    .tag{ background:var(--glass); color:var(--accent-2); padding:6px 10px; border-radius:999px; font-size:0.85rem; font-weight:600; }
+    .tag{ background:var(--glass); color:#f9fafb; padding:6px 10px; border-radius:999px; font-size:0.85rem; font-weight:600; border:1px solid rgba(255,255,255,0.4);}
     .intro{ font-size:0.98rem; color:var(--muted); margin-bottom:18px; }
     section{margin-bottom:18px;}
     h2{ color:var(--accent-2); margin:0 0 8px 0; font-size:1.05rem; }
-    h3{ margin:8px 0 6px 0; color:#0b1f3b; font-size:0.98rem }
+    h3{ margin:8px 0 6px 0; color:#111827; font-size:0.98rem }
     p{margin:8px 0;font-size:0.95rem;color:#0f1724}
     ul{margin:8px 0 8px 18px}
     li{margin:6px 0}
-    .callout{ border-left:4px solid var(--accent); background:#f5f7ff; padding:12px 14px; border-radius:8px; margin:12px 0; color:#111827; }
-    .two-col{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
-    @media (max-width:720px){ .two-col{grid-template-columns:1fr} header h1{font-size:1.1rem} }
+    .callout{ border-left:4px solid var(--accent); background:#f5f3ff; padding:12px 14px; border-radius:8px; margin:12px 0; color:#111827; }
+    @media (max-width:720px){ header h1{font-size:1.1rem} }
     @media print{ body{background:white;padding:6mm} header, .card{box-shadow:none} .tag{display:none} }
     .small{font-size:0.86rem;color:var(--muted)}
     .foot{margin-top:10px;font-size:0.82rem;color:var(--muted)}
-    .quote{font-style:italic;color:#0f172a;background:linear-gradient(90deg,rgba(37,99,235,0.06),transparent);padding:10px;border-radius:8px}
-
+    .quote{font-style:italic;color:#111827;background:linear-gradient(90deg,rgba(109,40,217,0.08),transparent);padding:10px;border-radius:8px}
+    .back-button{
+      display:inline-block;
+      margin:4px 0 14px 0;
+      font-size:0.88rem;
+      text-decoration:none;
+      color:var(--accent-2);
+      padding:6px 10px;
+      border-radius:999px;
+      background:var(--glass);
+    }
     /* Q&A */
-    .qa{border-top:1px solid #e5e7eb;padding-top:10px;margin-top:10px}
+    .qa{border-top:1px solid #e5e7eb;padding-top:12px;margin-top:10px}
     .q{font-weight:600;margin-top:10px}
-    .ans{margin-top:6px;padding:8px 10px;border-radius:10px;background:#f3f6ff;border:1px solid #e0e7ff}
-    .badge{display:inline-block;font-size:0.8rem;font-weight:700;padding:2px 8px;border-radius:999px;margin-right:8px}
-    .yes{background:#e0f7ec;color:#166534;border:1px solid #bbf7d0}
-    .no{background:#fee2e2;color:#991b1b;border:1px solid #fecaca}
+    .ans{margin-top:6px;padding:8px 10px;border-radius:10px;background:#f5f3ff;border:1px solid #e5e7eb}
+    .badge{display:inline-block;font-size:0.8rem;font-weight:700;padding:2px 8px;border-radius:999px;margin-right:8px;background:#ede9fe;color:#4c1d95;border:1px solid #ddd6fe}
     .why{color:#374151;font-size:0.9rem;margin-top:4px}
-    .back-button{display:inline-block;margin-top:6px;font-size:0.9rem;text-decoration:none;color:var(--accent-2)}
   </style>
 </head>
 <body>
   <div class="wrap">
     <header class="site" role="banner">
       <h1>Marketing — Περίληψη Κεφαλαίου 1</h1>
-      <p>Από την ιστορική εξέλιξη μέχρι τη σύγχρονη στρατηγική, το κεφάλαιο δένει θεωρία, μίγμα μάρκετινγκ και στρατηγική σκέψη.</p>
+      <p>Από τον ορισμό και την ιστορική εξέλιξη, μέχρι το μίγμα marketing, τον στρατηγικό σχεδιασμό και τα είδη marketing.</p>
     </header>
 
     <main class="card" role="main">
       <div class="meta">
         <div class="tag">Κεφάλαιο 1</div>
-        <div class="small">Θέμα: Marketing</div>
-        <div class="small">Εστίαση: εξέλιξη, μίγμα, προσανατολισμός, στρατηγική</div>
+        <div class="small">Θέμα: Βασικές αρχές Marketing</div>
+        <div class="small">Στόχος: Κατανόηση έννοιας, εξέλιξης & εργαλείων marketing</div>
       </div>
 
       <p class="intro">
-        Το κεφάλαιο χαρτογραφεί τη γέννηση και εξέλιξη του marketing στην Ευρώπη (κυρίως τις δεκαετίες 1960–1970),
-        παρουσιάζει τις βασικές περιόδους ανάπτυξης (παραγωγή, πωλήσεις, τμήμα marketing, εταιρεία marketing, κοινωνιολογικό marketing),
-        αναλύει το κλασικό μίγμα marketing (4P), τον προσανατολισμό του marketing (πελάτης, ανταγωνισμός, ενδολειτουργικός συντονισμός)
-        και εισάγει τη λογική του στρατηγικού σχεδιασμού. Η περίληψη κουμπώνει πάνω στις ερωτήσεις αυτοαξιολόγησης, ώστε
-        κάθε ερώτηση να «πατάει» σε συγκεκριμένο σημείο του κειμένου.
+        Η ενότητα 1 παρουσιάζει το <strong>τι είναι marketing</strong>, πώς εξελίχθηκε ιστορικά, ποια είναι τα βασικά του στοιχεία
+        (μίγμα marketing 4P), πώς γίνεται ο <strong>στρατηγικός σχεδιασμός marketing</strong> και ποια είναι τα κυριότερα
+        <strong>είδη marketing</strong> που συναντάμε σήμερα. Η περίληψη εδώ είναι «κουμπωμένη» πάνω στο περιεχόμενο των
+        ερωτήσεων κατανόησης: χρονολογίες, περίοδοι ανάπτυξης, μίγμα, προσανατολισμός, segmentation, branding και στρατηγικές
+        ανταγωνιστικού πλεονεκτήματος.
       </p>
+
       <a href="index.html" class="back-button">⟵ Επιστροφή στο μενού</a>
 
-      <section id="history">
-        <h2>1. Ιστορική Εξέλιξη του Marketing στην Ευρώπη</h2>
+      <section id="purpose">
+        <h2>Σκοπός & Προσδοκώμενα Αποτελέσματα</h2>
         <p>
-          Η συστηματική ανάπτυξη του marketing στην Ευρώπη εντοπίζεται κυρίως από τη δεκαετία του 1960 έως τη δεκαετία του 1970,
-          όταν οι επιχειρήσεις αρχίζουν να βλέπουν τον πελάτη όχι απλώς ως «δέκτη προϊόντος», αλλά ως κέντρο γύρω από το οποίο
-          οργανώνονται παραγωγή, πωλήσεις και επικοινωνία.
-        </p>
-        <p>
-          Το βιβλίο διακρίνει τις βασικές ιστορικές περιόδους:
+          Σκοπός της ενότητας είναι ο/η εκπαιδευόμενος/η να:
         </p>
         <ul>
-          <li><strong>Προσανατολισμός προς την παραγωγή</strong> (1920–1930) — έμφαση στη μαζική παραγωγή, περιορισμένος ανταγωνισμός.</li>
-          <li><strong>Προσανατολισμός προς τις πωλήσεις</strong> (1930–1950) — «σπρώξιμο» προϊόντων με έντονη πίεση πωλήσεων.</li>
-          <li><strong>Τμήμα marketing</strong> (1950–1960) — δημιουργία ξεχωριστού τμήματος που αναλαμβάνει έρευνα αγοράς, προβολή κ.λπ.</li>
-          <li><strong>Εταιρεία marketing</strong> (1960–1970) — όλη η επιχείρηση ευθυγραμμίζεται με τις ανάγκες των πελατών.</li>
-          <li><strong>Κοινωνιολογικό marketing</strong> (1970–σήμερα) — προσθήκη κοινωνικής ευθύνης, βιωσιμότητας και κοινωνικών επιπτώσεων.</li>
+          <li>κατανοήσει την <strong>έννοια του marketing</strong> ως φιλοσοφία και ως λειτουργία διοίκησης,</li>
+          <li>γνωρίζει την <strong>ιστορική εξέλιξη</strong> του marketing και τις φάσεις ανάπτυξής του στην Ευρώπη,</li>
+          <li>μπορεί να αναλύει τα στοιχεία του <strong>μίγματος marketing (4P: προϊόν, τιμή, διανομή, προώθηση)</strong>,</li>
+          <li>αναγνωρίζει τον ρόλο του <strong>στρατηγικού σχεδιασμού</strong> marketing στην επιχείρηση,</li>
+          <li>διακρίνει βασικές έννοιες όπως <strong>προσανατολισμός marketing</strong>, τμηματοποίηση, branding, είδη marketing.</li>
         </ul>
+      </section>
+
+      <section id="history">
+        <h2>Ιστορική Εξέλιξη & Περίοδοι Marketing</h2>
         <p>
-          Οι χρονολογίες αυτές εμφανίζονται ευθέως στις ερωτήσεις, όπου καλείσαι να αντιστοιχίσεις περιόδους και χρόνια,
-          άρα είναι κρίσιμο να διατηρηθούν ως έχουν.
+          Η ανάπτυξη του marketing στην Ευρώπη τοποθετείται κυρίως στην περίοδο <strong>1960–1970</strong>, όταν οι επιχειρήσεις
+          άρχισαν να μεταβαίνουν από την απλή έμφαση στην παραγωγή και τις πωλήσεις σε πιο συστηματικές, πελατοκεντρικές
+          προσεγγίσεις.
         </p>
+        <p>
+          Οι βασικές «περίοδοι» / στάδια ανάπτυξης του marketing που εμφανίζονται και στις ερωτήσεις είναι:
+        </p>
+        <ul>
+          <li><strong>Προσανατολισμός προς την παραγωγή</strong> (περί το 1920–1930) – έμφαση στην ποσότητα παραγωγής,</li>
+          <li><strong>Προσανατολισμός προς τις πωλήσεις</strong> (1930–1950) – εντατικές πωλησιακές πρακτικές,</li>
+          <li><strong>Τμήμα marketing</strong> (1950–1960) – δημιουργία ειδικών τμημάτων marketing στις επιχειρήσεις,</li>
+          <li><strong>Εταιρεία marketing</strong> (1960–1970) – marketing ως συνολική φιλοσοφία εταιρείας,</li>
+          <li><strong>Κοινωνιολογικό marketing</strong> (1970–σήμερα) – σύνδεση marketing, κοινωνίας και ευρύτερης ευημερίας.</li>
+        </ul>
       </section>
 
       <section id="mix">
-        <h2>2. Το Μίγμα Marketing (4P) και τι ΔΕΝ είναι μίγμα</h2>
+        <h2>Μίγμα Marketing & Προσανατολισμός</h2>
+        <h3>Το κλασικό μίγμα marketing (4P)</h3>
         <p>
-          Το κλασικό μίγμα marketing αποτελείται από τέσσερις βασικούς πυλώνες (τα γνωστά 4P), που σχεδιάζονται συντονισμένα:
+          Το μίγμα marketing αποτελείται από τέσσερα βασικά στοιχεία:
         </p>
         <ul>
-          <li><strong>Product (Προϊόν)</strong> — τι ακριβώς προσφέρεται (χαρακτηριστικά, ποιότητα, μάρκα, συσκευασία).</li>
-          <li><strong>Price (Τιμή)</strong> — επίπεδο τιμής, εκπτώσεις, όροι πληρωμής.</li>
-          <li><strong>Place (Διανομή)</strong> — κανάλια διανομής, αποθήκευση, φυσική διανομή.</li>
-          <li><strong>Promotion (Προώθηση)</strong> — διαφήμιση, προώθηση πωλήσεων, δημόσιες σχέσεις, προσωπική πώληση.</li>
+          <li><strong>Προϊόν (Product)</strong> – τι ακριβώς προσφέρεται στην αγορά,</li>
+          <li><strong>Τιμή (Price)</strong> – επίπεδο τιμολόγησης και πολιτικές τιμών,</li>
+          <li><strong>Διανομή (Place)</strong> – κανάλια μέσω των οποίων φτάνει το προϊόν στον πελάτη,</li>
+          <li><strong>Προώθηση (Promotion)</strong> – επικοινωνία, διαφήμιση, προωθητικές ενέργειες.</li>
         </ul>
         <p>
-          Η <strong>τμηματοποίηση</strong> (segmentation) είναι κεντρική έννοια στο marketing, αλλά δεν αποτελεί στοιχείο του
-          μίγματος· είναι <em>διαδικασία ανάλυσης της αγοράς</em>, πάνω στην οποία «κουμπώνει» μετά το μίγμα.
-          Αυτό συνδέεται άμεσα με την ερώτηση όπου ζητείται ποιο στοιχείο <em>δεν</em> ανήκει στο μίγμα marketing.
+          Η <strong>τμηματοποίηση (segmentation)</strong> δεν ανήκει στα στοιχεία του μίγματος, αλλά αποτελεί <strong>στρατηγική
+          διαδικασία</strong> ανάλυσης της αγοράς, πριν οριστικοποιηθεί το μίγμα.
         </p>
-      </section>
 
-      <section id="orientation">
-        <h2>3. Φιλοσοφία & Προσανατολισμός του Marketing</h2>
+        <h3>Προσανατολισμός Marketing</h3>
         <p>
-          Ο σύγχρονος προσανατολισμός marketing δεν είναι απλώς «πωλήσεις», αλλά μια συνολική φιλοσοφία επιχείρησης.
-          Τρεις βασικές συνιστώσες καθορίζουν τον προσανατολισμό:
+          Η «φιλοσοφία» marketing μιας επιχείρησης συνοψίζεται σε τρεις συνιστώσες:
         </p>
         <ul>
-          <li><strong>Προσανατολισμός στον πελάτη</strong> — συστηματική κατανόηση αναγκών, προτιμήσεων, συμπεριφοράς.</li>
-          <li><strong>Προσανατολισμός στον ανταγωνισμό</strong> — παρακολούθηση ανταγωνιστών, θέσης στην αγορά, στρατηγικών τους.</li>
-          <li><strong>Ενδολειτουργικός συντονισμός</strong> — συνεργασία όλων των τμημάτων (παραγωγή, πωλήσεις, οικονομικό κ.λπ.)
-              γύρω από κοινό στόχο αξίας για τον πελάτη.</li>
+          <li><strong>Προσανατολισμός στον πελάτη</strong> – κατανόηση αναγκών / επιθυμιών,</li>
+          <li><strong>Προσανατολισμός στον ανταγωνισμό</strong> – διαρκής σύγκριση & διαφοροποίηση,</li>
+          <li><strong>Ενδολειτουργικός συντονισμός</strong> – συνεργασία όλων των τμημάτων με κοινό στόχο.:contentReference[oaicite:6]{index=6}</li>
         </ul>
-        <p>
-          Η ερώτηση για τον προσανατολισμό ζητά ακριβώς να αναγνωρίσεις ότι <strong>όλα τα παραπάνω</strong> συνιστούν τη φιλοσοφία
-          marketing, όχι μόνο ένα στοιχείο μεμονωμένα.
-        </p>
       </section>
 
       <section id="strategy">
-        <h2>4. Στρατηγικός Σχεδιασμός Marketing & «Γκουρού»</h2>
+        <h2>Στρατηγικός Σχεδιασμός & Είδη Marketing</h2>
         <p>
-          Ο στρατηγικός σχεδιασμός marketing περιγράφεται ως <strong>διοικητική διαδικασία</strong> που καθορίζει
-          πώς θα λειτουργήσει το marketing: ποιοι είναι οι στόχοι, ποιες αγορές-στόχοι θα επιλεγούν, με ποιο μίγμα,
-          σε ποιο χρονοδιάγραμμα και με ποιους πόρους.
-        </p>
-        <div class="callout">
-          <strong>Βασική ιδέα:</strong> ο στρατηγικός σχεδιασμός δεν είναι «μία καμπάνια», αλλά ο σκελετός μέσα στον οποίο
-          κουμπώνουν όλες οι καμπάνιες, τα 4P και οι δράσεις.
-        </div>
-        <p>
-          Στο κεφάλαιο γίνεται αναφορά σε θεωρητικούς του χώρου. Ο <strong>Philip Kotler</strong> παρουσιάζεται ως ο «γκουρού»
-          που δίνει ιδιαίτερη έμφαση στη <strong>δημιουργία, παροχή και επικοινωνία αξίας</strong> προς την αγορά-στόχο.
-          Αυτό αντικατοπτρίζεται στην ερώτηση που συγκρίνει Drucker και Kotler και ζητά ποιος συνδέεται με τη λογική της
-          αξίας προς τον πελάτη.
-        </p>
-      </section>
-
-      <section id="segmentation">
-        <h2>5. Τμηματοποίηση & Μακρό-τμηματοποίηση</h2>
-        <p>
-          Η τμηματοποίηση είναι η διαδικασία με την οποία χωρίζεται η αγορά σε
-          <em>ομάδες καταναλωτών με παρόμοιες ανάγκες ή χαρακτηριστικά</em>, ώστε να στοχευθούν αποτελεσματικότερα.
+          Ο <strong>στρατηγικός σχεδιασμός marketing</strong> είναι διοικητική διαδικασία που καθορίζει <strong>πώς θα λειτουργήσει
+          το marketing</strong> στην πράξη: ανάλυση περιβάλλοντος, καθορισμός στόχων, επιλογή στρατηγικών, κατανομή πόρων και
+          έλεγχος αποτελεσμάτων.
         </p>
         <p>
-          Στο επίπεδο <strong>μακρό-τμηματοποίησης</strong> (macrosegmentation) εξετάζονται κυρίως χαρακτηριστικά
-          των <em>οργανισμών</em>, όπως:
+          Στα είδη marketing περιλαμβάνονται, μεταξύ άλλων:
         </p>
         <ul>
-          <li>Κλάδος δραστηριότητας των επιχειρήσεων.</li>
-          <li>Χρήστες ή μη χρήστες προϊόντων και υπηρεσιών.</li>
-          <li>Μέγεθος οργανισμού.</li>
+          <li><strong>Marketing περιεχομένου (content marketing)</strong> – στρατηγική προώθησης της επωνυμίας μέσω
+              συστηματικής παραγωγής χρήσιμου περιεχομένου,</li>
+          <li><strong>Social media marketing</strong>, <strong>search marketing</strong>, <strong>stealth marketing</strong>,
+              κ.ά.,</li>
+          <li>στρατηγικές ανταγωνιστικού πλεονεκτήματος όπως <strong>ηγεσία κόστους</strong>, διαφοροποίηση κ.λπ.,
+              με κλασική αναφορά στον Porter.:contentReference[oaicite:8]{index=8}</li>
         </ul>
-        <p>
-          <strong>Δεν</strong> ανήκουν εδώ τα προσωπικά χαρακτηριστικά των μεμονωμένων αγοραστών — αυτά σχετίζονται
-          με μικρο-τμηματοποίηση καταναλωτών. Αυτό είναι και ο πυρήνας της αντίστοιχης ερώτησης.
-        </p>
-      </section>
-
-      <section id="modern-forms">
-        <h2>6. Σύγχρονα Είδη Marketing & Ανταγωνιστικό Πλεονέκτημα</h2>
-        <p>
-          Πέρα από το κλασικό μίγμα, το κεφάλαιο αναφέρεται σε σύγχρονες μορφές, όπως το
-          <strong>μάρκετινγκ περιεχομένου</strong>, το <strong>μάρκετινγκ μέσων κοινωνικής δικτύωσης</strong> και το
-          <strong>μάρκετινγκ μηχανών αναζήτησης</strong>. Το marketing μέσων κοινωνικής δικτύωσης τονίζεται ιδιαίτερα
-          ως στρατηγική που ενισχύει την <strong>επωνυμία (brand)</strong> μιας επιχείρησης.
-        </p>
-        <p>
-          Γίνεται επίσης αναφορά σε πρακτικές όπως το <strong>stealth marketing</strong>, όπου η προώθηση γίνεται
-          «αθόρυβα» χωρίς ο καταναλωτής να καταλαβαίνει ότι εκτίθεται σε διαφήμιση. Στόχος του δεν είναι η
-          άμεση δημιουργία πωλήσεων, αλλά η έμμεση διαμόρφωση στάσεων – κάτι που αποτυπώνεται και στην ερώτηση.
-        </p>
-        <p>
-          Τέλος, παρουσιάζονται οι βασικές ιδέες του <strong>Michael Porter</strong> για το ανταγωνιστικό πλεονέκτημα,
-          συμπεριλαμβανομένης της <em>ηγεσίας κόστους</em> ως μίας από τις βασικές στρατηγικές. Αυτό ζητείται ρητά
-          στην τελευταία ερώτηση.
+        <p class="quote">
+          Ο Kotler δίνει έμφαση στην «δημιουργία, παροχή και επικοινωνία αξίας» προς τον πελάτη, ενώ ο Porter
+          συνδέεται με την ανάλυση ανταγωνιστικού πλεονεκτήματος (π.χ. ηγεσία κόστους).
         </p>
       </section>
 
       <section id="recap">
-        <h2>7. Ανακεφαλαίωση με σύνδεση στις Ερωτήσεις</h2>
+        <h2>Σύνοψη — Τι «ρωτάνε» οι ερωτήσεις</h2>
         <ul>
-          <li>Η ανάπτυξη του marketing στην Ευρώπη συνδέεται με τις δεκαετίες 1960–1970 και με διακριτές ιστορικές φάσεις.</li>
-          <li>Το μίγμα marketing = Προϊόν, Τιμή, Διανομή, Προώθηση (& όχι η τμηματοποίηση).</li>
-          <li>Ο προσανατολισμός marketing περιλαμβάνει πελάτη, ανταγωνισμό και ενδολειτουργικό συντονισμό.</li>
-          <li>Ο στρατηγικός σχεδιασμός marketing είναι διοικητική διαδικασία που οργανώνει όλες τις ενέργειες marketing.</li>
-          <li>Η μακρό-τμηματοποίηση αφορά χαρακτηριστικά οργανισμών, όχι προσωπικά χαρακτηριστικά καταναλωτών.</li>
-          <li>Σύγχρονες μορφές marketing (social media, περιεχομένου κ.λπ.) ενισχύουν την επωνυμία και το ανταγωνιστικό πλεονέκτημα.</li>
+          <li>Σε ποια περίοδο <strong>αναπτύχθηκε το marketing στην Ευρώπη</strong> και πώς κατανέμονται οι επιμέρους φάσεις.</li>
+          <li>Ποια είναι τα στοιχεία του <strong>μίγματος marketing</strong> και τι <strong>ΔΕΝ</strong> ανήκει σε αυτό.</li>
+          <li>Ποιες είναι οι <strong>συνιστώσες προσανατολισμού marketing</strong> (πελάτης–ανταγωνισμός–συντονισμός).</li>
+          <li>Τι σημαίνει <strong>στρατηγικός σχεδιασμός marketing</strong> ως διοικητική διαδικασία.</li>
+          <li>Ποιος θεωρείται «γκουρού» της αξίας πελάτη (Kotler) και ποιος συνέδεσε την <strong>ηγεσία κόστους</strong> με
+              την ανταγωνιστική στρατηγική (Porter).</li>
+          <li>Ποιος τύπος marketing περιλαμβάνει <strong>προώθηση επωνυμίας</strong> μέσω περιεχομένου (content marketing)
+              και τι επιδιώκει το stealth marketing.</li>
         </ul>
       </section>
 
-      <!-- ΕΝΟΤΗΤΑ: Ερωτήσεις ΝΑΙ/ΟΧΙ & Πολλαπλής Επιλογής — Κεφάλαιο 1 -->
       <section id="qa-ch1" class="qa">
         <h2>Ερωτήσεις Κατανόησης — Κεφάλαιο 1</h2>
-        <p class="small">Αυτολεξεί από το βιβλίο. Οι απαντήσεις και οι αιτιολογήσεις βασίζονται στο Παράρτημα «Απαντήσεις Ερωτήσεων Αυτοαξιολόγησης».</p>
+        <p class="small">Ερωτήσεις αυτοαξιολόγησης (1.12). Δίνεται η σωστή επιλογή και μία σύντομη αιτιολόγηση.</p>
 
         <div class="q">1) Πότε αναπτύχθηκε το marketing στην Ευρώπη;</div>
+        <p>Α. 1970 και 1980 &nbsp;&nbsp; Β. 1960 και 1970 &nbsp;&nbsp; Γ. 1980 και 1990</p>
         <div class="ans">
-          <div>Α. 1970 και 1980<br>Β. 1960 και 1970<br>Γ. 1980 και 1990</div>
-          <div class="why"><span class="badge yes">Σωστή: Β</span> Η ανάπτυξη του marketing στην Ευρώπη τοποθετείται κυρίως στις δεκαετίες 1960–1970.</div>
+          <span class="badge">Σωστή απάντηση: Α</span>
+          <div class="why">Η ουσιαστική ανάπτυξη του marketing στην Ευρώπη τοποθετείται στη δεκαετία 1970–1980.</div>
         </div>
 
         <div class="q">2) Πότε αναπτύχθηκε η κάθε περίοδος;</div>
+        <p>
+          Α. Προσανατολισμός προς την παραγωγή<br>
+          Β. Εταιρεία marketing<br>
+          Γ. Κοινωνιολογικό marketing<br>
+          Δ. Προσανατολισμός προς τις πωλήσεις<br>
+          Ε. Τμήμα marketing
+        </p>
+        <p>
+          i. 1930–1950 &nbsp;&nbsp; ii. 1920–1930 &nbsp;&nbsp; iii. 1950–1960 &nbsp;&nbsp; iv. 1960–1970 &nbsp;&nbsp; v. 1970–Σήμερα
+        </p>
         <div class="ans">
-          <div>
-            Α. Προσανατολισμός προς την παραγωγή<br>
-            Β. Εταιρεία marketing<br>
-            Γ. Κοινωνιολογικό marketing<br>
-            Δ. Προσανατολισμός προς τις πωλήσεις<br>
-            Ε. Τμήμα marketing
-            <br><br>
-            i. 1930-1950<br>
-            ii. 1920-1930<br>
-            iii. 1950-1960<br>
-            iv. 1960-1970<br>
-            v. 1970-Σήμερα
-          </div>
-          <div class="why">
-            <span class="badge yes">Σωστό αντιστοίχιση:</span>
-            Α–ii, Β–iv, Γ–v, Δ–i, Ε–iii. Κάθε περίοδος συνδέεται με συγκεκριμένο ιστορικό στάδιο εξέλιξης του marketing.
-          </div>
+          <span class="badge">Σωστή αντιστοίχιση: Α–ii, Β–iv, Γ–v, Δ–i, Ε–iii</span>
+          <div class="why">Ακολουθείται η ιστορική διαδοχή από παραγωγή → πωλήσεις → τμήμα marketing → εταιρεία marketing → κοινωνιολογικό marketing.</div>
         </div>
 
         <div class="q">3) Ποιο από τα παρακάτω ΔΕΝ ανήκει στο μίγμα marketing;</div>
+        <p>Α. Προϊόν &nbsp;&nbsp; Β. Διανομή &nbsp;&nbsp; Γ. Τμηματοποίηση &nbsp;&nbsp; Δ. Προώθηση</p>
         <div class="ans">
-          <div>Α. Προϊόν<br>Β. Διανομή<br>Γ. Τμηματοποίηση<br>Δ. Προώθηση</div>
-          <div class="why"><span class="badge yes">Σωστή: Γ</span> Το μίγμα marketing περιλαμβάνει Προϊόν, Τιμή, Διανομή, Προώθηση· η τμηματοποίηση είναι διαδικασία ανάλυσης αγοράς, όχι στοιχείο του μίγματος.</div>
+          <span class="badge">Σωστή απάντηση: Γ</span>
+          <div class="why">Το μίγμα marketing είναι 4P (Προϊόν, Τιμή, Διανομή, Προώθηση)· η τμηματοποίηση είναι στάδιο ανάλυσης, όχι στοιχείο του μίγματος.</div>
         </div>
 
         <div class="q">4) Ποιο από τα παρακάτω ανήκει στις συνιστώσες που καθορίζουν τον προσανατολισμό του marketing;</div>
+        <p>Α. Προσανατολισμός στον πελάτη &nbsp;&nbsp; Β. Προσανατολισμός στον ανταγωνισμό &nbsp;&nbsp; Γ. Ενδολειτουργικός συντονισμός &nbsp;&nbsp; Δ. Όλα τα παραπάνω</p>
         <div class="ans">
-          <div>Α. Προσανατολισμός στον πελάτη<br>Β. Προσανατολισμός στον ανταγωνισμό<br>Γ. Ενδολειτουργικός συντονισμός<br>Δ. Όλα τα παραπάνω</div>
-          <div class="why"><span class="badge yes">Σωστή: Δ</span> Ο σύγχρονος προσανατολισμός marketing συντίθεται από και τα τρία: πελάτη, ανταγωνισμό και εσωτερικό συντονισμό.</div>
+          <span class="badge">Σωστή απάντηση: Δ</span>
+          <div class="why">Όλα μαζί συγκροτούν τη φιλοσοφία marketing της επιχείρησης.</div>
         </div>
 
-        <div class="q">5) Ο στρατηγικός σχεδιασμός marketing, είναι μια διοικητική διαδικασία η οποία καθορίζει τον τρόπο με τον οποίο λειτουργεί το marketing;</div>
+        <div class="q">5) Ο στρατηγικός σχεδιασμός marketing είναι μια διοικητική διαδικασία η οποία καθορίζει τον τρόπο με τον οποίο λειτουργεί το marketing;</div>
+        <p>Α. Σωστό &nbsp;&nbsp; Β. Λάθος</p>
         <div class="ans">
-          <div>Α. Σωστό<br>Β. Λάθος</div>
-          <div class="why"><span class="badge yes">Σωστή: Α</span> Ορίζεται ρητά ως διοικητική διαδικασία που οργανώνει τη λειτουργία του marketing.</div>
+          <span class="badge">Σωστή απάντηση: Α</span>
+          <div class="why">Ο στρατηγικός σχεδιασμός οργανώνει στόχους, στρατηγικές και μέσα του marketing.</div>
         </div>
 
-        <div class="q">6) Ποιος ‘’γκουρού’’ του marketing δίνει έμφαση στην αξία των πελατών, τη δημιουργία, την παροχή, αλλά και την επικοινωνία αυτής με την αγορά-στόχο;</div>
+        <div class="q">6) Ποιος «γκουρού» του marketing δίνει έμφαση στην αξία των πελατών, τη δημιουργία, την παροχή, αλλά και την επικοινωνία αυτής με την αγορά-στόχο;</div>
+        <p>Α. Drucker &nbsp;&nbsp; Β. Kotler</p>
         <div class="ans">
-          <div>Α. Drucker<br>Β. Kotler</div>
-          <div class="why"><span class="badge yes">Σωστή: Β</span> Ο Kotler συνδέεται με την έννοια της δημιουργίας και επικοινωνίας αξίας προς τον πελάτη.</div>
+          <span class="badge">Σωστή απάντηση: Β</span>
+          <div class="why">Ο Kotler έχει ταυτιστεί με την έννοια της δημιουργίας και επικοινωνίας αξίας προς τον πελάτη.</div>
         </div>
 
-        <div class="q">7) Ποιο από τα παρακάτω δεν ανήκει στις πλέον συνηθισμένες μεταβλητές μακρότμηματοποίησης;</div>
+        <div class="q">7) Ποιο από τα παρακάτω δεν ανήκει στις πλέον συνηθισμένες μεταβλητές μακροτμηματοποίησης;</div>
+        <p>Α. Τα προσωπικά χαρακτηριστικά των «αγοραστών»<br>
+           Β. Κλάδος δραστηριότητας των επιχειρήσεων<br>
+           Γ. Χρήστες ή μη χρήστες προϊόντων και υπηρεσιών</p>
         <div class="ans">
-          <div>Α. τα προσωπικά χαρακτηριστικά των «αγοραστών».<br>Β. κλάδος δραστηριότητας των επιχειρήσεων<br>Γ. χρήστες ή μη χρήστες προϊόντων και υπηρεσιών</div>
-          <div class="why"><span class="badge yes">Σωστή: Α</span> Η μακρό-τμηματοποίηση αφορά χαρακτηριστικά οργανισμών (κλάδος, μέγεθος, χρήση), όχι προσωπικά χαρακτηριστικά καταναλωτών.</div>
+          <span class="badge">Σωστή απάντηση: Γ</span>
+          <div class="why">«Χρήστες/μη χρήστες» είναι μικροτμηματοποίηση· οι άλλες δύο μεταβλητές σχετίζονται με πιο «μακρο» επίπεδο.</div>
         </div>
 
         <div class="q">8) Ποια πολύτιμη στρατηγική μάρκετινγκ περιλαμβάνει την προώθηση της επωνυμίας μιας επιχείρησης;</div>
+        <p>Α. Μάρκετινγκ περιεχομένου &nbsp;&nbsp; Β. Μάρκετινγκ μέσων κοινωνικής δικτύωσης &nbsp;&nbsp; Γ. Μάρκετινγκ μηχανών αναζήτησης</p>
         <div class="ans">
-          <div>Α. Μάρκετινγκ περιεχομένου<br>Β. Μάρκετινγκ μέσων κοινωνικής δικτύωσης<br>Γ. Μάρκετινγκ μηχανών αναζήτησης</div>
-          <div class="why"><span class="badge yes">Σωστή: Β</span> Το μάρκετινγκ στα μέσα κοινωνικής δικτύωσης εστιάζει ιδιαίτερα στην ενίσχυση της επωνυμίας.</div>
+          <span class="badge">Σωστή απάντηση: Α</span>
+          <div class="why">Το content marketing χτίζει brand μέσω συστηματικής παραγωγής περιεχομένου.</div>
         </div>
 
         <div class="q">9) Ο στόχος του stealth marketing είναι η άμεση δημιουργία πωλήσεων;</div>
+        <p>Α. Σωστό &nbsp;&nbsp; Β. Λάθος</p>
         <div class="ans">
-          <div>Α. Σωστό<br>Β. Λάθος</div>
-          <div class="why"><span class="badge yes">Σωστή: Β</span> Το stealth marketing στοχεύει σε έμμεση επιρροή/δημιουργία buzz, όχι σε άμεση πώληση.</div>
+          <span class="badge">Σωστή απάντηση: Β</span>
+          <div class="why">Το stealth marketing στοχεύει κυρίως στην υποσυνείδητη επιρροή και στη δημιουργία θορύβου, όχι σε άμεσες πωλήσεις.</div>
         </div>
 
-        <div class="q">10) Ποιος ανέφερε την ‘’ηγεσία κόστους’’ ως βασικό είδος για την στρατηγική ανταγωνιστικού πλεονεκτήματος;</div>
+        <div class="q">10) Ποιος ανέφερε την «ηγεσία κόστους» ως βασικό είδος για τη στρατηγική ανταγωνιστικού πλεονεκτήματος;</div>
+        <p>Α. Porter &nbsp;&nbsp; Β. Kotler</p>
         <div class="ans">
-          <div>Α. Porter<br>Β. Kotler</div>
-          <div class="why"><span class="badge yes">Σωστή: Α</span> Η «ηγεσία κόστους» είναι μία από τις γενικές στρατηγικές του Michael Porter.</div>
+          <span class="badge">Σωστή απάντηση: Α</span>
+          <div class="why">Ο Porter διατύπωσε τις γενικές στρατηγικές: ηγεσία κόστους, διαφοροποίηση, εστίαση.</div>
         </div>
       </section>
 
-      <div class="foot">2025 — Εκπαιδευτική σύνοψη βασισμένη στο επίσημο υλικό του προγράμματος.</div>
+      <div class="foot">
+        2025 — Εκπαιδευτική αξιοποίηση υλικού «Ψηφιακές δεξιότητες κοινωνικής δικτύωσης με εφαρμογές στο χώρο εργασίας (SOCIAL MEDIA)».
+      </div>
     </main>
 
     <a href="index.html" class="back-button">⟵ Επιστροφή στο μενού</a>
