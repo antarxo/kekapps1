@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Μέτρηση Αποτελεσματικότητας E-Marketing — Περίληψη Κεφαλαίου 4</title>
+  <style>
+    :root{
+      --bg:#f4f5fb;
+      --card:#ffffff;
+      --accent:#2563eb;
+      --muted:#6b7280;
+      --maxw:900px;
+      --radius:14px;
+      --glass: rgba(37,99,235,0.06);
+      --accent-2:#1d4ed8;
+      --shadow: 0 6px 24px rgba(15,23,42,0.12);
+    }
+    html,body{height:100%;}
+    body{
+      margin:0;
+      font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: linear-gradient(180deg,var(--bg),#e8f0ff);
+      color:#0f1724;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.58;
+      padding:24px;
+      display:flex;
+      justify-content:center;
+    }
+    .wrap{ width:100%; max-width:var(--maxw); }
+    header.site{
+      background: linear-gradient(90deg,var(--accent),var(--accent-2));
+      color:#fff; padding:20px; border-radius:var(--radius); box-shadow:var(--shadow); margin-bottom:18px;
+    }
+    header h1{margin:0;font-size:1.25rem;letter-spacing:0.2px}
+    header p{margin:6px 0 0;font-size:0.9rem;opacity:0.92}
+    main.card{ background:var(--card); border-radius:var(--radius); padding:18px; box-shadow:var(--shadow); }
+    .meta{ display:flex; gap:12px; align-items:center; margin-bottom:12px; flex-wrap:wrap; }
+    .tag{ background:var(--glass); color:var(--accent-2); padding:6px 10px; border-radius:999px; font-size:0.85rem; font-weight:600; }
+    .intro{ font-size:0.98rem; color:var(--muted); margin-bottom:18px; }
+    section{margin-bottom:18px;}
+    h2{ color:var(--accent-2); margin:0 0 8px 0; font-size:1.05rem; }
+    h3{ margin:8px 0 6px 0; color:#0b3b2f; font-size:0.98rem }
+    p{margin:8px 0;font-size:0.95rem;color:#0f1724}
+    ul{margin:8px 0 8px 18px}
+    li{margin:6px 0}
+    .callout{ border-left:4px solid var(--accent); background:#f5f7ff; padding:12px 14px; border-radius:8px; margin:12px 0; color:#102a6b; }
+    .two-col{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+    @media (max-width:720px){ .two-col{grid-template-columns:1fr} header h1{font-size:1.1rem} }
+    @media print{ body{background:white;padding:6mm} header, .card{box-shadow:none} .tag{display:none} }
+    .small{font-size:0.86rem;color:var(--muted)}
+    .foot{margin-top:10px;font-size:0.82rem;color:var(--muted)}
+    .quote{font-style:italic;color:#0f172a;background:linear-gradient(90deg,rgba(37,99,235,0.04),transparent);padding:10px;border-radius:8px}
+    .back-button{display:inline-block;margin:0 0 14px 0;font-size:0.9rem;text-decoration:none;color:var(--accent-2)}
+    .back-button:hover{text-decoration:underline}
+    /* Q&A */
+    .qa{border-top:1px solid #e5e7eb;padding-top:10px}
+    .q{font-weight:600;margin-top:10px}
+    .ans{margin-top:6px;padding:8px 10px;border-radius:10px;background:#f5f7ff;border:1px solid #e0e7ff}
+    .badge{display:inline-block;font-size:0.8rem;font-weight:700;padding:2px 8px;border-radius:999px;margin-right:8px}
+    .yes{background:#e0ecff;color:#1d4ed8;border:1px solid #bed3ff}
+    .no{background:#fee2e2;color:#b91c1c;border:1px solid #fecaca}
+    .why{color:#374151;font-size:0.9rem;margin-top:4px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="site" role="banner">
+      <h1>Μέτρηση Αποτελεσματικότητας E-Marketing — Περίληψη Κεφαλαίου 4</h1>
+      <p>Web metrics, KPIs, εργαλεία ανάλυσης και μετρήσεις social media, συγκεντρωμένα σε μία εκτενή, «διαβασμένη» περίληψη.</p>
+    </header>
+
+    <main class="card" role="main">
+      <div class="meta">
+        <div class="tag">Κεφάλαιο 4</div>
+        <div class="small">Θέμα: Μέτρηση Αποτελεσματικότητας E-Marketing</div>
+        <div class="small">Στόχος: Κατανόηση Web Analytics, KPIs και Social Media Metrics</div>
+      </div>
+
+      <p class="intro">
+        Η ενότητα 4 εστιάζει στο πώς μετράμε αν το ηλεκτρονικό μάρκετινγκ «πιάνει τόπο». Ξεκινά από τις βασικές μετρήσεις ιστού 
+        (web metrics) και την ανάλυση δεδομένων (web analytics), περνά στους δείκτες διαδικτυακής ανάλυσης (KPI’s) και τις κατηγορίες 
+        τους, παρουσιάζει δημοφιλείς δείκτες απόδοσης όπως ROI, SEO keyword ranking, CTR και μέσο χρόνο παραμονής, αναλύει τα βασικά 
+        εργαλεία web analytics (Google Analytics, OWA, SEMrush, Hotjar κ.ά.) και ολοκληρώνει με τις μετρήσεις και τα analytics των 
+        social media (CPC, CPM, engagement, CSAT, NPS κ.λπ.). Οι ερωτήσεις στο τέλος «πιάνουν» όλες αυτές τις έννοιες: αποθήκευση 
+        δεδομένων, ταξινόμηση analytics, λειτουργία KPI, CLV/CAC, ROI, CTR, επιλογή εργαλείων και μετρήσεις ικανοποίησης/κόστους.
+      </p>
+
+      <a href="index.html" class="back-button">⟵ Επιστροφή στο μενού</a>
+
+      <section id="purpose">
+        <h2>Σκοπός & Προσδοκώμενα Αποτελέσματα</h2>
+        <p>
+          Σκοπός της εκπαιδευτικής ενότητας είναι ο ωφελούμενος να κατανοήσει τι σημαίνουν Web Metrics και Web Analytics, 
+          ποιοι δείκτες (KPI’s) χρησιμοποιούνται για τη διαδικτυακή ανάλυση, ποιες είναι οι βασικές κατηγορίες μετρήσεων 
+          (χρηματοοικονομικές, πελατών, διαδικασίας) και πώς όλα αυτά δένουν με συγκεκριμένα εργαλεία και μετρήσεις 
+          social media. Στόχος δεν είναι μόνο να «διαβάζει» νούμερα, αλλά να καταλαβαίνει τι σημαίνουν για την επιχείρηση.
+        </p>
+        <ul>
+          <li>Να εξηγεί τη διαφορά Web metrics – Web analytics και τη διαδικασία ανάλυσης ιστού.</li>
+          <li>Να κατανοεί τον ρόλο των KPI ως βασικών δεικτών απόδοσης και τις κύριες κατηγορίες τους.</li>
+          <li>Να αναγνωρίζει τους πιο δημοφιλείς δείκτες (ROI, SEO ranking, CTR, Average Site Time, οργανικές πωλήσεις).</li>
+          <li>Να γνωρίζει τα βασικά εργαλεία διαδικτυακής ανάλυσης και τις δυνατότητές τους.</li>
+          <li>Να μπορεί να εξηγεί βασικές μετρήσεις social media (CPC, CPM, engagement, CSAT, NPS κ.ά.) και πώς οδηγούν σε αποφάσεις.</li>
+        </ul>
+      </section>
+
+      <section id="key-concepts">
+        <h2>Έννοιες-Κλειδιά</h2>
+        <p class="small">Πυκνή λίστα εννοιών που «κουμπώνουν» άμεσα με τις ερωτήσεις αυτοαξιολόγησης.</p>
+        <ul>
+          <li><strong>KPI (Key Performance Indicator)</strong>: προ-καθορισμένη τιμή/μέτρηση που επιτρέπει τη διαχείριση και μέτρηση της συνολικής απόδοσης ιστοτόπου ή εφαρμογής και της επίτευξης στόχων.</li>
+          <li><strong>Web Analytics (WA)</strong>: μέτρηση, συλλογή, ανάλυση και παρουσίαση δεδομένων από τον ιστό, με σκοπό τη βελτιστοποίηση της χρήσης του.</li>
+          <li><strong>Web metrics</strong>: ποσοτικές μετρήσεις (επισκέψεις, μοναδικοί χρήστες, χρόνος παραμονής, bounce rate κ.λπ.) που τροφοδοτούν την ανάλυση.</li>
+          <li><strong>Δείκτες χρηματοοικονομικοί</strong>: καθαρό κέρδος, καθαρό περιθώριο, απόδοση επένδυσης (ROI) κ.ά.</li>
+          <li><strong>Μετρήσεις πελατών</strong>: αξία διάρκειας ζωής πελάτη (CLV), κόστος απόκτησης πελάτη (CAC), ικανοποίηση και διατήρηση πελατών.</li>
+          <li><strong>Μετρήσεις απόδοσης διαδικασίας</strong>: ποσοστό ελαττωματικών προϊόντων, χρόνος διεκπεραίωσης διαδικασιών κ.λπ.</li>
+          <li><strong>ROI (Return on Investment)</strong>: σχέση καθαρού κέρδους προς κόστος – δείχνει αν «βγαίνει» η επένδυση.</li>
+          <li><strong>SEO Keyword Ranking</strong>: κατάταξη για συγκεκριμένες λέξεις-κλειδιά σε μηχανές αναζήτησης.</li>
+          <li><strong>CTR (Click Through Rate)</strong>: αναλογία κλικ / εμφανίσεων μιας διαφήμισης.</li>
+          <li><strong>CSAT (Customer Satisfaction Score)</strong>: μέτρηση βαθμού ικανοποίησης πελατών.</li>
+          <li><strong>NPS (Net Promoter Score)</strong>: μετρά πόσο πιθανό είναι ένας πελάτης να προτείνει την εταιρεία/προϊόν σε άλλους.</li>
+          <li><strong>CPC (Cost Per Click)</strong>: κόστος ανά κλικ σε διαφήμιση.</li>
+          <li><strong>CPM (Cost Per Mil)</strong>: κόστος ανά 1.000 εμφανίσεις σε social media.</li>
+          <li><strong>Open Web Analytics (OWA), Google Analytics, SEMrush, Hotjar, Amplitude</strong>: εργαλεία web analytics και ανάλυσης συμπεριφοράς/SEO.</li>
+        </ul>
+      </section>
+
+      <section id="web-analytics">
+        <h2>4.1 Web Metrics & Web Analytics</h2>
+        <p>
+          Κάθε επιχείρηση που δραστηριοποιείται στο διαδίκτυο χρειάζεται μετρήσιμα στοιχεία για να κρίνει αν η στρατηγική 
+          που εφαρμόζει είναι αποτελεσματική. Η ανάγκη αυτή δημιούργησε web metrics και web analytics: 
+          από τη «γυμνή» μέτρηση αριθμών στη συστηματική ανάλυση συμπεριφοράς χρηστών.
+        </p>
+        <h3>Web metrics – Web analytics</h3>
+        <p>
+          Web metrics είναι οι βασικές μετρήσεις (επισκέψεις, μοναδικοί χρήστες, χρόνος, σελίδες/επίσκεψη κ.λπ.), ενώ 
+          Web analytics είναι η ερμηνεία αυτών των μετρήσεων για να βελτιωθεί η εμπειρία χρήστη και η επίτευξη στόχων 
+          (εγγραφές, πωλήσεις, λήψεις, φόρμες ενδιαφέροντος).
+        </p>
+        <p>
+          Η διαδικασία ανάλυσης ιστού περιλαμβάνει: συλλογή δεδομένων, επεξεργασία σε χρήσιμες πληροφορίες, 
+          ορισμό βασικών KPI (π.χ. CTR, conversions, χρόνος παραμονής), ανάπτυξη στρατηγικής με βάση τα ευρήματα 
+          και πειραματισμό (π.χ. A/B testing) για βελτίωση αποτελεσμάτων.
+        </p>
+        <div class="callout">
+          <strong>Κεντρική ιδέα:</strong> Δεν αρκεί να «βλέπουμε» νούμερα. Πρέπει να τα συνδέουμε με στόχους (KPI) 
+          και να δοκιμάζουμε βελτιώσεις ώστε η ιστοσελίδα και οι καμπάνιες να αποδίδουν καλύτερα.
+        </div>
+      </section>
+
+      <section id="kpis">
+        <h2>4.2 Δείκτες Διαδικτυακής Ανάλυσης (KPI’s)</h2>
+        <p>
+          Για να μετρηθεί το ποσοστό επιτυχίας ή αποτυχίας ενός στόχου χρειάζονται KPIs. Ένας KPI απεικονίζει την επίδοση 
+          μιας μεταβλητής (π.χ. conversion rate, average order value) και λειτουργεί ως «θερμόμετρο» της αποτελεσματικότητας. 
+          Η επιλογή σωστών KPIs συνδέεται με τις πραγματικές ανάγκες και τη στρατηγική της επιχείρησης.
+        </p>
+        <h3>Ρόλος KPI</h3>
+        <ul>
+          <li>Μετρούν την επιτυχία σε σχέση με στόχους και συγκρίσιμες επιχειρήσεις.</li>
+          <li>Βοηθούν στον προσδιορισμό στρατηγικών, οικονομικών και λειτουργικών επιτευγμάτων.</li>
+          <li>Επιτρέπουν αξιολόγηση συνολικής εικόνας αλλά και μεμονωμένων τμημάτων/καμπανιών.</li>
+        </ul>
+
+        <div class="two-col">
+          <div>
+            <h3>Χρηματοοικονομικές Μετρήσεις</h3>
+            <ul>
+              <li>Καθαρό κέρδος & καθαρό περιθώριο κέρδους.</li>
+              <li>Έσοδα μείον συγκεκριμένα έξοδα, περιθώρια κερδοφορίας.</li>
+              <li>Δείκτες ρευστότητας και διαθεσιμότητας μετρητών.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Μετρήσεις Πελατών & Διαδικασιών</h3>
+            <ul>
+              <li><strong>CLV (Customer Lifetime Value)</strong>: συνολικό ποσό που αναμένεται να ξοδέψει ένας πελάτης σε όλη τη σχέση.</li>
+              <li><strong>CAC (Customer Acquisition Cost)</strong>: συνολικό κόστος πωλήσεων/μάρκετινγκ για απόκτηση νέου πελάτη.</li>
+              <li>Μετρήσεις διαδικασιών: ποσοστό ελαττωματικών προϊόντων, χρόνος διεκπεραίωσης κ.ά.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="popular-kpis">
+        <h2>4.3 Δημοφιλείς Δείκτες Απόδοσης</h2>
+
+        <h3>Return on Investment (ROI)</h3>
+        <p>
+          Ο ROI δείχνει την απόδοση μιας επένδυσης ως λόγο καθαρού κέρδους προς κόστος. Βοηθά να αποφασίσουμε 
+          αν μια καμπάνια άξιζε τα χρήματα και συγκρίνεται με εναλλακτικές επενδύσεις.
+        </p>
+
+        <h3>SEO Keyword Ranking</h3>
+        <p>
+          Μετρά τη θέση ενός site για συγκεκριμένες λέξεις-κλειδιά στις μηχανές αναζήτησης. Αν τα χρήματα στο SEO 
+          φέρνουν καλύτερη κατάταξη, η επένδυση θεωρείται πιο αποδοτική.
+        </p>
+
+        <h3>Click Through Rate (CTR)</h3>
+        <p>
+          Αναλογία κλικ προς εμφανίσεις (κλικ ÷ εμφανίσεις). Μετρά πόσο ελκυστική είναι μια διαφήμιση 
+          ή δωρεάν καταχώριση. Ένα υψηλό CTR σημαίνει ότι οι χρήστες βρίσκουν το μήνυμα σχετικό και χρήσιμο.
+        </p>
+
+        <h3>Average Site Time – Μέσος Χρόνος Παραμονής</h3>
+        <p>
+          Ο μέσος χρόνος που περνά ένας επισκέπτης στον ιστότοπο. Δείχνει πόσο «κρατά» το περιεχόμενο τον χρήστη 
+          και αν ο ιστότοπος είναι πραγματικά χρήσιμος ή οι χρήστες φεύγουν γρήγορα.
+        </p>
+
+        <h3>Αύξηση Οργανικών Πωλήσεων</h3>
+        <p>
+          Μετρά την αύξηση πωλήσεων που προέρχονται χωρίς άμεση πληρωμένη διαφήμιση, π.χ. μέσω οργανικού SEO, 
+          περιεχομένου, word of mouth. Σημαντική ένδειξη μακροπρόθεσμης αξίας της ψηφιακής παρουσίας.
+        </p>
+      </section>
+
+      <section id="tools">
+        <h2>4.4 Εργαλεία Διαδικτυακής Ανάλυσης (Web Analytic Tools)</h2>
+        <p>
+          Για να μετρηθούν όλα τα παραπάνω, χρησιμοποιούνται πλατφόρμες web analytics. Ορισμένες είναι δωρεάν, άλλες 
+          επί πληρωμή, όλες όμως στοχεύουν στη συλλογή και ανάλυση δεδομένων χρήσης.
+        </p>
+        <ul>
+          <li><strong>Google Analytics</strong>: από τις πιο δημοφιλείς πλατφόρμες αναλυτικών στοιχείων παγκοσμίως, με έμφαση σε traffic, συμπεριφορά και conversions.</li>
+          <li><strong>Open Web Analytics (OWA)</strong>: δωρεάν εργαλείο που παρακολουθεί τις βασικές μετρήσεις ιστοτόπου.</li>
+          <li><strong>SEMrush</strong>: εργαλείο ανάλυσης ιστού με έμφαση στο SEO (λέξεις-κλειδιά, ανταγωνισμός, backlinks).</li>
+          <li><strong>Hotjar</strong>: πλατφόρμα ανάλυσης συμπεριφοράς (heatmaps, recordings, funnels) και βελτιστοποίησης ποσοστού μετατροπής.</li>
+          <li><strong>Amplitude</strong>: εργαλείο ανάλυσης προϊόντος/συμπεριφοράς χρηστών με έμφαση σε journey και funnels (αναφέρεται στα «καλύτερα δωρεάν»).</li>
+        </ul>
+        <p class="quote">
+          Σημείο που «δείχνει» και η ερώτηση 8: Open Web Analytics και Amplitude ανήκουν στα βασικά δωρεάν εργαλεία, 
+          ενώ το SEM δεν είναι αυτόνομο εργαλείο web analytics αλλά γενικότερη έννοια (Search Engine Marketing).
+        </p>
+      </section>
+
+      <section id="social-metrics">
+        <h2>4.5 Social Media Metrics & Analytics</h2>
+        <p>
+          Οι μετρήσεις social media δείχνουν πόσο καλά αποδίδει η στρατηγική σε πλατφόρμες όπως Facebook, Instagram, 
+          YouTube, LinkedIn, Twitter κ.ά. Καλύπτουν από «ποιος μας βλέπει» μέχρι «πόσο κοστίζει κάθε ενέργεια».
+        </p>
+
+        <h3>Βασικές κατηγορίες μετρήσεων</h3>
+        <ul>
+          <li><strong>Reach / Προσέγγιση</strong>: πόσα άτομα βλέπουν το περιεχόμενο.</li>
+          <li><strong>Impressions / Εντυπώσεις</strong>: πόσες φορές εμφανίζεται το περιεχόμενο.</li>
+          <li><strong>Growth rate</strong>: ρυθμός αύξησης κοινού (νέοι followers). </li>
+          <li><strong>Engagement / Ποσοστό εμπλοκής</strong>: αντιδράσεις, σχόλια, κοινοποιήσεις ως ποσοστό του κοινού.</li>
+          <li><strong>Virality rate</strong>: κοινοποιήσεις ως ποσοστό των εμφανίσεων.</li>
+          <li><strong>Video views & completion rate</strong>: πόσοι βλέπουν βίντεο και πόσοι τα ολοκληρώνουν.</li>
+        </ul>
+
+        <h3>Δείκτες κόστους & απόδοσης</h3>
+        <ul>
+          <li><strong>CPC (Cost Per Click)</strong>: κόστος ανά κλικ.</li>
+          <li><strong>CPM (Cost Per Mil)</strong>: κόστος για κάθε 1.000 εμφανίσεις διαφήμισης στα social.</li>
+          <li><strong>Conversion rate</strong>: πόσο συχνά μια ενέργεια social οδηγεί σε μετατροπή (εγγραφή, αγορά κ.λπ.).</li>
+        </ul>
+
+        <h3>Δείκτες ικανοποίησης</h3>
+        <ul>
+          <li><strong>CSAT (Customer Satisfaction Score)</strong>: μετρά πόσο ικανοποιημένοι είναι οι πελάτες από προϊόν ή υπηρεσία.</li>
+          <li><strong>NPS (Net Promoter Score)</strong>: βασίζεται στη ερώτηση «Πόσο πιθανό είναι να μας προτείνατε σε φίλο;» και χωρίζει τους πελάτες σε επικριτές, παθητικούς και υποστηρικτές.</li>
+        </ul>
+      </section>
+
+      <section id="recap">
+        <h2>4.6 Ανακεφαλαίωση — Κύρια Σημεία</h2>
+        <ul>
+          <li>Η μέτρηση αποτελεσματικότητας e-marketing βασίζεται σε web metrics, web analytics και σωστά επιλεγμένους KPI.</li>
+          <li>Οι KPI ομαδοποιούνται σε χρηματοοικονομικούς, πελατών και διαδικασίας και αποτυπώνουν στρατηγικά, οικονομικά και λειτουργικά επιτεύγματα.</li>
+          <li>Δημοφιλείς δείκτες: ROI, SEO keyword ranking, CTR, Average Site Time, αύξηση οργανικών πωλήσεων.</li>
+          <li>Εργαλεία όπως Google Analytics, OWA, SEMrush, Hotjar, Amplitude υποστηρίζουν τη συλλογή/ανάλυση δεδομένων.</li>
+          <li>Social media metrics (CPC, CPM, engagement, CSAT, NPS κ.λπ.) συνδέουν την online παρουσία με χειροπιαστό αποτέλεσμα.</li>
+        </ul>
+      </section>
+
+      <!-- ΕΝΟΤΗΤΑ: Ερωτήσεις ΝΑΙ/ΟΧΙ / Πολλαπλής Επιλογής — Κεφάλαιο 4 -->
+      <section id="qa-ch4" class="qa">
+        <h2>Ερωτήσεις Κατανόησης — Κεφάλαιο 4</h2>
+        <p class="small">
+          Ακριβής διατύπωση από το βιβλίο. Κάθε ερώτηση συνοδεύεται από τη σωστή απάντηση και πολύ σύντομη αιτιολόγηση.
+        </p>
+
+        <div class="q">
+          1. Σε ποιες κατηγορίες διακρίνεται η αποθήκευση δεδομένων ;<br>
+          Α. Εσωτερική, Εξωτερική<br>
+          Β. Άμεση, Έμμεση
+        </div>
+        <div class="ans">
+          <span class="badge yes">Σωστή: Α</span>
+          <div class="why">
+            Το κείμενο ξεχωρίζει την αποθήκευση δεδομένων σε εσωτερική και εξωτερική ανάλογα με το πού τηρούνται τα δεδομένα.
+          </div>
+        </div>
+
+        <div class="q">
+          2. Πως μπορούν να ταξινομηθούν τα Analytics;<br>
+          Α. καθοδηγητικά<br>
+          Β. περιγραφικά<br>
+          Γ. προγνωστικά<br>
+          Δ. Όλα τα παραπάνω
+        </div>
+        <div class="ans">
+          <span class="badge yes">Σωστή: Δ</span>
+          <div class="why">
+            Το βιβλίο αναφέρει τρεις κατηγορίες analytics: περιγραφικά, προγνωστικά και καθοδηγητικά, άρα σωστή είναι η επιλογή «Όλα τα παραπάνω».
+          </div>
+        </div>
+
+        <div class="q">
+          3. Οι KPI βοηθούν συγκεκριμένα στον προσδιορισμό των …., ….. και …. επιτευγμάτων μιας εταιρείας<br>
+          Α. στρατηγικών, λειτουργικών, κοινωνικών<br>
+          Β. οικονομικών, κοινωνικών, λειτουργικών<br>
+          Γ. στρατηγικών, οικονομικών ,λειτουργικών
+        </div>
+        <div class="ans">
+          <span class="badge yes">Σωστή: Γ</span>
+          <div class="why">
+            Οι KPI, σύμφωνα με το κείμενο, αποτυπώνουν στρατηγικά, οικονομικά και λειτουργικά επιτεύγματα της εταιρείας.
+          </div>
+        </div>
+
+        <div class="q">
+          4. Η αξία διάρκειας ζωής του πελάτη (CLV) αντιπροσωπεύει το συνολικό κόστος πωλήσεων και μάρκετινγκ που απαιτείται για την προσέλκυση ενός νέου πελάτη.<br>
+          Α. Σωστό<br>
+          Β. Λάθος
+        </div>
+        <div class="ans">
+          <span class="badge no">Σωστή: Β</span>
+          <div class="why">
+            CLV είναι το συνολικό ποσό που ξοδεύει ο πελάτης σε όλη τη σχέση· το κόστος απόκτησης νέου πελάτη είναι το CAC, όχι το CLV.
+          </div>
+        </div>
+
+        <div class="q">
+          5. Η απόδοση επένδυσης (ROI) δίνει στοιχεία για:<br>
+          Α.  τους πελάτες<br>
+          Β. τα χρήματα<br>
+          Γ. χρήματα και δαπάνες
+        </div>
+        <div class="ans">
+          <span class="badge yes">Σωστή: Γ</span>
+          <div class="why">
+            Ο ROI ορίζεται ως λόγος καθαρού κέρδους προς κόστος, άρα αφορά τα χρήματα και τις δαπάνες της επένδυσης.
+          </div>
+        </div>
+
+        <div class="q">
+          6. Ποιος δείκτης χρησιμοποιείται στην μέτρηση απόδοσης μιας καμπάνιας που δεν μπορεί να μετρηθεί με την απόδοση επένδυσης (ROI) ή τις ανταποκρίσεις από άλλες δραστηριότητες marketing;<br>
+          Α. Αλληλεπιδράσεις Online<br>
+          Β. Cost per Lead Generated
+        </div>
+        <div class="ans">
+          <span class="badge yes">Σωστή: Α</span>
+          <div class="why">
+            Σε καμπάνιες χωρίς άμεση πώληση, παρακολουθούνται κυρίως οι online αλληλεπιδράσεις ως δείκτης απόδοσης.
+          </div>
+        </div>
+
+        <div class="q">
+          7. Τι είναι το CTR;<br>
+          Α. Ποσοστό «κλικαρίσματος».<br>
+          Β. Μέσος Χρόνος Παραμονής στο Site.<br>
+          Γ. Κόστος για κάθε ανταπόκριση που δημιουργείται.
+        </div>
+        <div class="ans">
+          <span class="badge yes">Σωστή: Α</span>
+          <div class="why">
+            CTR (Click Through Rate) είναι η αναλογία κλικ προς εμφανίσεις μιας διαφήμισης, δηλαδή το ποσοστό «κλικαρίσματος».
+          </div>
+        </div>
+
+        <div class="q">
+          8. Ποιο από τα ακόλουθα δεν ανήκει στα 4 καλύτερα δωρεάν;<br>
+          Α. Open- Web Analytics<br>
+          Β. SEM<br>
+          Γ. Amplitude
+        </div>
+        <div class="ans">
+          <span class="badge no">Σωστή: Β</span>
+          <div class="why">
+            Open Web Analytics και Amplitude αναφέρονται ως δωρεάν εργαλεία analytics, ενώ το SEM είναι γενικός όρος (Search Engine Marketing), όχι συγκεκριμένο δωρεάν εργαλείο.
+          </div>
+        </div>
+
+        <div class="q">
+          9. Το CSAT είναι μια μέτρηση που μετρά:<br>
+          Α. Βαθμολογία ικανοποίησης πελατών<br>
+          Β. Ποσοστό αναζήτησης<br>
+          Γ. Ποσοστό παραμονής
+        </div>
+        <div class="ans">
+          <span class="badge yes">Σωστή: Α</span>
+          <div class="why">
+            CSAT (Customer Satisfaction Score) είναι ρητά ο δείκτης που μετρά πόσο ικανοποιημένοι είναι οι πελάτες.
+          </div>
+        </div>
+
+        <div class="q">
+          10. Σύμφωνα με τις μετρήσεις κοινωνικής δικτύωσης πως ονομάζεται το κόστος που πληρώνετε για κάθε χίλιες εμφανίσεις της διαφήμισής σας στα μέσα κοινωνικής δικτύωσης;<br>
+          Α. CPM<br>
+          Β. CSAT<br>
+          Γ. NPS
+        </div>
+        <div class="ans">
+          <span class="badge yes">Σωστή: Α</span>
+          <div class="why">
+            Το CPM (Cost Per Mil) είναι το κόστος ανά 1.000 εμφανίσεις διαφήμισης στα social media.
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <a href="index.html" class="back-button">⟵ Επιστροφή στο μενού</a>
+  </div>
+</body>
+</html>
