@@ -3,112 +3,232 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Social Media — Περίληψη Κεφαλαίου 2</title>
+  <title>Ενότητα 2 — Social Media | Σύνοψη & Ερωτήσεις</title>
   <style>
     :root{
-      --bg:#f5f3ff;
+      --bg:#fff7ed;
       --card:#ffffff;
-      --accent:#7c3aed;
-      --accent-2:#5b21b6;
+      --accent:#c2410c;
+      --accent-2:#9a3412;
       --muted:#6b7280;
       --maxw:900px;
       --radius:14px;
-      --glass: rgba(124,58,237,0.07);
-      --shadow: 0 6px 24px rgba(30,27,75,0.14);
+      --glass: rgba(194,65,12,0.06);
+      --shadow: 0 6px 24px rgba(15,23,42,0.12);
     }
     html,body{height:100%;}
     body{
       margin:0;
       font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      background: radial-gradient(circle at top, #e9ddff, var(--bg));
+      background: linear-gradient(180deg,var(--bg),#fffbf5);
       color:#0f1724;
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale;
-      line-height:1.58;
+      line-height:1.6;
       padding:24px;
       display:flex;
       justify-content:center;
     }
     .wrap{ width:100%; max-width:var(--maxw); }
     header.site{
-      background: linear-gradient(120deg,var(--accent),var(--accent-2));
+      background: linear-gradient(90deg,var(--accent),var(--accent-2));
       color:#fff; padding:20px; border-radius:var(--radius); box-shadow:var(--shadow); margin-bottom:18px;
     }
-    header h1{margin:0;font-size:1.25rem;letter-spacing:0.2px}
-    header p{margin:6px 0 0;font-size:0.9rem;opacity:0.92}
-    main.card{ background:var(--card); border-radius:var(--radius); padding:18px; box-shadow:var(--shadow); }
-    .meta{ display:flex; gap:12px; align-items:center; margin-bottom:12px; flex-wrap:wrap; }
+    header h1{margin:0;font-size:1.3rem;letter-spacing:0.2px}
+    header p{margin:6px 0 0;font-size:0.9rem;opacity:0.95}
+    main.card{ background:var(--card); border-radius:var(--radius); padding:20px; box-shadow:var(--shadow); }
+    .meta{ display:flex; gap:12px; align-items:center; margin-bottom:14px; flex-wrap:wrap; }
     .tag{ background:var(--glass); color:var(--accent-2); padding:6px 10px; border-radius:999px; font-size:0.85rem; font-weight:600; }
-    .intro{ font-size:0.98rem; color:var(--muted); margin-bottom:18px; }
+    .small{font-size:0.86rem;color:var(--muted)}
+    .intro{ font-size:0.97rem; color:var(--muted); margin-bottom:18px; }
     section{margin-bottom:18px;}
-    h2{ color:var(--accent-2); margin:0 0 8px 0; font-size:1.05rem; }
-    h3{ margin:8px 0 6px 0; color:#312e81; font-size:0.98rem }
+    h2{ color:var(--accent-2); margin:0 0 8px 0; font-size:1.06rem; }
+    h3{ margin:8px 0 6px 0; color:#7c2d12; font-size:0.98rem }
     p{margin:8px 0;font-size:0.95rem;color:#0f1724}
     ul{margin:8px 0 8px 18px}
-    li{margin:6px 0}
-    .callout{ border-left:4px solid var(--accent); background:#f8f5ff; padding:12px 14px; border-radius:8px; margin:12px 0; color:#111827; }
+    li{margin:4px 0}
+    .callout{ border-left:4px solid var(--accent); background:#fff1e7; padding:12px 14px; border-radius:10px; margin:12px 0; color:#7c2d12; font-size:0.93rem;}
     .two-col{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
-    @media (max-width:720px){ .two-col{grid-template-columns:1fr} header h1{font-size:1.1rem} }
+    @media (max-width:720px){ .two-col{grid-template-columns:1fr} header h1{font-size:1.15rem} }
     @media print{ body{background:white;padding:6mm} header, .card{box-shadow:none} .tag{display:none} }
-    .small{font-size:0.86rem;color:var(--muted)}
-    .foot{margin-top:10px;font-size:0.82rem;color:var(--muted)}
-    .quote{font-style:italic;color:#1f2933;background:linear-gradient(90deg,rgba(124,58,237,0.06),transparent);padding:10px;border-radius:8px}
-    .back-button{display:inline-block;margin-top:6px;font-size:0.9rem;text-decoration:none;color:var(--accent-2)}
+    .back-button{display:inline-block;margin:6px 0 18px 0;font-size:0.9rem;text-decoration:none;color:var(--accent-2)}
+    .back-button:hover{text-decoration:underline}
+    .foot{margin-top:12px;font-size:0.82rem;color:var(--muted)}
 
-    .qa{border-top:1px solid #e5e7eb;padding-top:10px;margin-top:10px}
-    .q{font-weight:600;margin-top:10px}
-    .ans{margin-top:6px;padding:8px 10px;border-radius:10px;background:#f6f4ff;border:1px solid #e3ddff}
-    .badge{display:inline-block;font-size:0.8rem;font-weight:700;padding:2px 8px;border-radius:999px;margin-right:8px}
-    .yes{background:#e0f7ec;color:#166534;border:1px solid #bbf7d0}
-    .no{background:#fee2e2;color:#991b1b;border:1px solid #fecaca}
-    .why{color:#374151;font-size:0.9rem;margin-top:4px}
+    .qa{border-top:1px solid #e5e7eb;padding-top:14px;margin-top:10px}
+    .qa h2{margin-top:0}
+    .q{font-weight:600;font-size:0.95rem;margin-top:10px}
+    .options{margin:6px 0 4px 18px;font-size:0.94rem}
+    .ans{margin-top:4px;padding:8px 10px;border-radius:10px;background:#fff7ed;border:1px dashed #fed7aa}
+    .badge{display:inline-block;font-size:0.8rem;font-weight:700;padding:2px 8px;border-radius:999px;margin-right:8px;border:1px solid #fed7aa;color:#9a3412;background:#ffedd5;}
+    .why{color:#4b5563;font-size:0.88rem;margin-top:4px;font-style:italic}
   </style>
 </head>
 <body>
   <div class="wrap">
     <header class="site" role="banner">
-      <h1>Social Media — Περίληψη Κεφαλαίου 2</h1>
-      <p>Ορισμός, κατηγορίες, πλεονεκτήματα–μειονεκτήματα και βασικές πλατφόρμες, με link στις ερωτήσεις αυτοαξιολόγησης.</p>
+      <h1>Εκπαιδευτική Ενότητα 2 — Social Media</h1>
+      <p>Ορισμός, ιστορία, βασικά μέσα κοινωνικής δικτύωσης και τα πλεονεκτήματά τους.</p>
     </header>
 
     <main class="card" role="main">
       <div class="meta">
-        <div class="tag">Κεφάλαιο 2</div>
+        <div class="tag">Ενότητα 2</div>
         <div class="small">Θέμα: Social Media</div>
-        <div class="small">Εστίαση: ιστορία, κατηγορίες, πλατφόρμες, χρήση</div>
+        <div class="small">Εστίαση: Ιστορική εξέλιξη, ορισμός, είδη & βασικά χαρακτηριστικά</div>
       </div>
 
       <p class="intro">
-        Το κεφάλαιο τοποθετεί τα Social Media στο πλαίσιο της εξέλιξης του Διαδικτύου: από τους πρώτους ιστότοπους (όπως το
-        <code>info.cern.ch</code>) μέχρι τα σημερινά γιγαντιαία δίκτυα όπως το Facebook και το TikTok. Παρουσιάζονται
-        ορισμοί, κατηγορίες, πλεονεκτήματα/μειονεκτήματα, καθώς και βασικές πλατφόρμες (Facebook, Instagram, WhatsApp, Viber κ.ά.).
-        Οι ερωτήσεις στο τέλος «πιάνουν» ορισμούς, χρονολογίες, κυρίαρχα δίκτυα, καθώς και συγκεκριμένες εφαρμογές.
+        Η ενότητα 2 περνάει από την «κλασική» λογική του marketing στον κόσμο των Social Media:
+        πώς ξεκίνησαν οι πρώτες πλατφόρμες, πότε εμφανίστηκε ο όρος social media, ποιες είναι οι βασικές
+        κατηγορίες μέσων (wiki, blog, podcast κ.λπ.), ποια πλεονεκτήματα/κίνδυνοι προκύπτουν από τη χρήση τους
+        και πώς συγκεκριμένες εφαρμογές (όπως το Facebook Chat → Messenger) άλλαξαν τον τρόπο που
+        επικοινωνούμε. Οι 6 ερωτήσεις ελέγχουν ακριβώς αυτά τα σημεία.
       </p>
+
       <a href="index.html" class="back-button">⟵ Επιστροφή στο μενού</a>
 
-      <section id="definition">
-        <h2>1. Ορισμός & Γενικά Χαρακτηριστικά των Social Media</h2>
+      <section id="history-sm">
+        <h2>1. Πρώτες μορφές κοινωνικής δικτύωσης & χρονολογία</h2>
         <p>
-          Social Media είναι πλατφόρμες στο Διαδίκτυο που επιτρέπουν στους χρήστες να δημιουργούν προφίλ, να παράγουν
-          και να μοιράζονται περιεχόμενο (κείμενο, εικόνα, βίντεο, ήχο) και να αλληλεπιδρούν μεταξύ τους σε πραγματικό χρόνο.
+          Στο κείμενο παρουσιάζονται οι πρώτοι διαδικτυακοί ιστότοποι κοινωνικής δικτύωσης (π.χ. Six Degrees,
+          Friendster, MySpace) και η σταδιακή μετάβαση προς πλατφόρμες όπως το Facebook, το Twitter και το LinkedIn.
+          Η 1η ερώτηση ζητά να αναγνωρίσεις ποιο δίκτυο θεωρείται «πρώτος διαδικτυακός ιστότοπος κοινωνικής δικτύωσης».
         </p>
         <p>
-          Τα βασικά χαρακτηριστικά περιλαμβάνουν:
-        </p>
-        <ul>
-          <li><strong>Δημιουργία προφίλ</strong> με προσωπικά στοιχεία, φωτογραφίες, ενδιαφέροντα.</li>
-          <li><strong>Διασυνδεσιμότητα</strong> (δίκτυα «φίλων», «ακολούθων», «επαφών»).</li>
-          <li><strong>Δημιουργία & διαμοιρασμός περιεχομένου</strong> (posts, stories, βίντεο κ.λπ.).</li>
-          <li><strong>Διαδραστικότητα</strong> (likes, σχόλια, κοινοποιήσεις, αντιδράσεις).</li>
-          <li><strong>Κλίμακα & ταχύτητα διάδοσης</strong> — μηνύματα σε παγκόσμιο κοινό σε δευτερόλεπτα.</li>
-        </ul>
-        <p>
-          Αυτή η βάση εξηγεί γιατί τα Social Media αντιμετωπίζονται ως ξεχωριστό αντικείμενο σε σχέση με το κλασικό web,
-          και γιατί στο κεφάλαιο επανέρχεται συνεχώς η ιδέα της «συμμετοχής» και της «συν-δημιουργίας» περιεχομένου.
+          Παράλληλα, αναφέρονται σύγχρονα στατιστικά: ποιο μέσο είναι σήμερα το πιο δημοφιλές (ανάλογα με έρευνες,
+          π.χ. Δεκέμβριος 2021). Η 2η ερώτηση σε βάζει να συνδέσεις θεωρία με πραγματικά δεδομένα χρήσης πλατφορμών.
         </p>
       </section>
 
-      <section id="history2">
-        <h2>2. Από τους πρώτους ιστότοπους στα σύγχρονα δίκτυα</h2>
+      <section id="definition">
+        <h2>2. Ορισμός «social media» & βασικές κατηγορίες μέσων</h2>
         <p>
-          Ιστορικά, η ανάπτυξη των Social Media πατάει πάνω στην εξέλιξη του ίδιου του
+          Η ενότητα δίνει έναν λειτουργικό ορισμό των social media: διαδικτυακές εφαρμογές που βασίζονται σε
+          τεχνολογίες Web 2.0, επιτρέπουν τη δημιουργία και ανταλλαγή περιεχομένου από τους χρήστες και
+          υποστηρίζουν τη δικτύωση ατόμων ή/και οργανισμών. Γίνεται αναφορά στο πότε εμφανίστηκε ο όρος
+          «social media» και ποια εταιρεία τον συνέδεσε με την πρώτη της εφαρμογή κοινωνικής δικτύωσης· αυτή η λεπτομέρεια
+          εμφανίζεται ευθέως στην ερώτηση 3.
+        </p>
+        <p>
+          Εξηγούνται επίσης διαφορετικές μορφές μέσων: wiki (συλλογική επεξεργασία περιεχομένου), blog
+          (χρονολογικά οργανωμένες αναρτήσεις), podcast (ηχητικό περιεχόμενο), πλατφόρμες microblogging κ.λπ.
+          Η 4η ερώτηση ελέγχει αν έχεις ξεκαθαρίσει ποιο από αυτά έχει σχεδιαστεί για να διευκολύνει
+          ειδικά την προσθήκη νέων καταχωρίσεων.
+        </p>
+      </section>
+
+      <section id="pros-cons">
+        <h2>3. Πλεονεκτήματα/κίνδυνοι & εφαρμογές ανταλλαγής μηνυμάτων</h2>
+        <p>
+          Στα πλεονεκτήματα των Social Media περιλαμβάνονται: ευκολία διάχυσης πληροφορίας, άμεση επικοινωνία
+          με κοινό, δυνατότητα δημιουργίας κοινοτήτων, brand awareness κ.ά. Παράλληλα, επισημαίνονται
+          υπερβολικές προσδοκίες ή παρερμηνείες για τα αποτελέσματά τους. Η 5η ερώτηση παίζει με αυτή την ιδέα:
+          ένα δήθεν «πλεονέκτημα» που μπορεί να μην είναι τόσο ρεαλιστικό ή να διατυπώνεται υπερβολικά.
+        </p>
+        <p>
+          Το κείμενο συνδέει επίσης τα Social Media με εφαρμογές ανταλλαγής μηνυμάτων, όπου χαρακτηριστικό
+          παράδειγμα είναι η εξέλιξη του Facebook Chat στην αυτόνομη εφαρμογή Messenger. Η 6η ερώτηση
+          το πιάνει αυτό ονομαστικά.
+        </p>
+
+        <div class="callout">
+          <strong>Mini οδηγός για τις ερωτήσεις:</strong>  
+          1–2 → ιστορία & στατιστικά,  
+          3–4 → ορισμός και είδη μέσων,  
+          5–6 → πλεονεκτήματα / εφαρμογές messaging.
+        </div>
+      </section>
+
+      <!-- ΕΡΩΤΗΣΕΙΣ ΑΥΤΟΑΞΙΟΛΟΓΗΣΗΣ ΕΝΟΤΗΤΑΣ 2 -->
+      <section id="qa-ch2" class="qa">
+        <h2>Ερωτήσεις Αυτοαξιολόγησης — Ενότητα 2</h2>
+        <p class="small">
+          Οι απαντήσεις και η αιτιολόγηση συμπληρώνονται από τον εκπαιδευόμενο.
+        </p>
+
+        <div class="q">
+          1. Ο πρώτος διαδικτυακός ιστότοπος κοινωνικής δικτύωσης είναι το .........
+        </div>
+        <div class="options">
+          A. Friendster<br>
+          B. Six Degrees<br>
+          Γ. My Space
+        </div>
+        <div class="ans">
+          <span class="badge">Σωστή απάντηση: Β</span>
+          <div class="why">Σύμφωνα με το κείμενο, το Six Degrees θεωρείται ο πρώτος διαδικτυακός ιστότοπος κοινωνικής δικτύωσης.</div>
+        </div>
+
+        <div class="q">
+          2. Σύμφωνα με τα στοιχεία που συλλέχθηκαν το Δεκέμβριο του 2021, ποιο είναι το πιο δημοφιλές μέσο κοινωνικής δικτύωσης;
+        </div>
+        <div class="options">
+          A. Facebook<br>
+          B. LinkedIn<br>
+          Γ. Twitter
+        </div>
+        <div class="ans">
+          <span class="badge">Σωστή απάντηση: Α</span>
+          <div class="why">Τα στοιχεία χρήσης δείχνουν το Facebook ως το πιο δημοφιλές μέσο στην έρευνα της ενότητας.</div>
+        </div>
+
+        <div class="q">
+          3. Σύμφωνα με την B&amp;C , ο όρος «social media» πρωτοεμφανίστηκε το ...., όταν το ...... επινόησε την πρώτη του εφαρμογή κοινωνικής δικτύωσης.
+        </div>
+        <div class="options">
+          A. 2005, Facebook<br>
+          B. 2004, LinkedIn<br>
+          Γ. 2003, MySpace
+        </div>
+        <div class="ans">
+          <span class="badge">Σωστή απάντηση: Β</span>
+          <div class="why">Η αναφορά B&amp;C στο βιβλίο συνδέει τον όρο «social media» με το 2004 και το LinkedIn.</div>
+        </div>
+
+        <div class="q">
+          4. Πως ονομάζεται το μέσο κοινωνικής δικτύωσης που έχει σχεδιαστεί για να διευκολύνουν την προσθήκη νέων καταχωρίσεων;
+        </div>
+        <div class="options">
+          A. Wiki<br>
+          B. Podcast<br>
+          Γ. Blog
+        </div>
+        <div class="ans">
+          <span class="badge">Σωστή απάντηση: Γ</span>
+          <div class="why">Το blog είναι δομημένο σε διαδοχικές καταχωρίσεις/αναρτήσεις, με έμφαση στην εύκολη προσθήκη νέου περιεχομένου.</div>
+        </div>
+
+        <div class="q">
+          5. Ένα από τα πλεονεκτήματα των Social Media είναι πως αυξάνεται η ευφυΐα
+        </div>
+        <div class="options">
+          A. Λάθος<br>
+          B. Σωστό
+        </div>
+        <div class="ans">
+          <span class="badge">Σωστή απάντηση: Α</span>
+          <div class="why">Το βιβλίο δεν αναγνωρίζει «αύξηση ευφυΐας» ως τεκμηριωμένο πλεονέκτημα, άρα η διατύπωση θεωρείται λανθασμένη.</div>
+        </div>
+
+        <div class="q">
+          6. Πως ονομάζεται η εφαρμογή που αναπτύχθηκε ως Facebook Chat το 2008;
+        </div>
+        <div class="options">
+          A. WhatsApp<br>
+          B. Messenger<br>
+          Γ. Viber
+        </div>
+        <div class="ans">
+          <span class="badge">Σωστή απάντηση: Β</span>
+          <div class="why">Το Facebook Chat εξελίχθηκε στην αυτόνομη εφαρμογή Messenger.</div>
+        </div>
+      </section>
+
+      <div class="foot">
+        2025 — Σύνοψη & ερωτήσεις με δομή προσαρμοσμένη στη ροή της ενότητας 2.
+      </div>
+    </main>
+  </div>
+</body>
+</html>
