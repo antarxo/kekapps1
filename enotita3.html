@@ -3,29 +3,28 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Social Media & Νέα Ηλεκτρονικά Μέσα — Περίληψη Κεφαλαίου 3</title>
+  <title>Ενότητα 3 — Social Media & Στρατηγικό e-Marketing | Σύνοψη & Ερωτήσεις</title>
   <style>
     :root{
-      /* Ελαφρά αλλαγμένα χρώματα προς “ψηφιακό μπλε” */
-      --bg:#f4f6ff;
+      --bg:#f5f3ff;
       --card:#ffffff;
-      --accent:#1d4ed8;
-      --accent-2:#1e3a8a;
+      --accent:#7c3aed;
+      --accent-2:#5b21b6;
       --muted:#6b7280;
       --maxw:900px;
       --radius:14px;
-      --glass: rgba(37,99,235,0.06);
-      --shadow: 0 6px 24px rgba(15,23,42,0.08);
+      --glass: rgba(124,58,237,0.06);
+      --shadow: 0 6px 24px rgba(15,23,42,0.12);
     }
     html,body{height:100%;}
     body{
       margin:0;
       font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      background: linear-gradient(180deg,var(--bg),#eef2ff);
+      background: linear-gradient(180deg,var(--bg),#ede9fe);
       color:#0f1724;
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale;
-      line-height:1.58;
+      line-height:1.6;
       padding:24px;
       display:flex;
       justify-content:center;
@@ -35,416 +34,261 @@
       background: linear-gradient(90deg,var(--accent),var(--accent-2));
       color:#fff; padding:20px; border-radius:var(--radius); box-shadow:var(--shadow); margin-bottom:18px;
     }
-    header h1{margin:0;font-size:1.25rem;letter-spacing:0.2px}
-    header p{margin:6px 0 0;font-size:0.9rem;opacity:0.92}
-    main.card{ background:var(--card); border-radius:var(--radius); padding:18px; box-shadow:var(--shadow); }
-    .meta{ display:flex; gap:12px; align-items:center; margin-bottom:12px; flex-wrap:wrap; }
+    header h1{margin:0;font-size:1.3rem;letter-spacing:0.2px}
+    header p{margin:6px 0 0;font-size:0.9rem;opacity:0.95}
+    main.card{ background:var(--card); border-radius:var(--radius); padding:20px; box-shadow:var(--shadow); }
+    .meta{ display:flex; gap:12px; align-items:center; margin-bottom:14px; flex-wrap:wrap; }
     .tag{ background:var(--glass); color:var(--accent-2); padding:6px 10px; border-radius:999px; font-size:0.85rem; font-weight:600; }
-    .intro{ font-size:0.98rem; color:var(--muted); margin-bottom:18px; }
+    .small{font-size:0.86rem;color:var(--muted)}
+    .intro{ font-size:0.97rem; color:var(--muted); margin-bottom:18px; }
     section{margin-bottom:18px;}
-    h2{ color:var(--accent-2); margin:0 0 8px 0; font-size:1.05rem; }
-    h3{ margin:8px 0 6px 0; color:#0b3b2f; font-size:0.98rem }
+    h2{ color:var(--accent-2); margin:0 0 8px 0; font-size:1.06rem; }
+    h3{ margin:8px 0 6px 0; color:#4c1d95; font-size:0.98rem }
     p{margin:8px 0;font-size:0.95rem;color:#0f1724}
     ul{margin:8px 0 8px 18px}
-    li{margin:6px 0}
-    .callout{ border-left:4px solid var(--accent); background:#f5f7ff; padding:12px 14px; border-radius:8px; margin:12px 0; color:#111827; }
+    li{margin:4px 0}
+    .callout{ border-left:4px solid var(--accent); background:#f3e8ff; padding:12px 14px; border-radius:10px; margin:12px 0; color:#4c1d95; font-size:0.93rem;}
     .two-col{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
-    @media (max-width:720px){ .two-col{grid-template-columns:1fr} header h1{font-size:1.1rem} }
+    @media (max-width:720px){ .two-col{grid-template-columns:1fr} header h1{font-size:1.15rem} }
     @media print{ body{background:white;padding:6mm} header, .card{box-shadow:none} .tag{display:none} }
-    .small{font-size:0.86rem;color:var(--muted)}
-    .foot{margin-top:10px;font-size:0.82rem;color:var(--muted)}
-    .quote{font-style:italic;color:#1e3a8a;background:linear-gradient(90deg,rgba(37,99,235,0.06),transparent);padding:10px;border-radius:8px}
+    .back-button{display:inline-block;margin:6px 0 18px 0;font-size:0.9rem;text-decoration:none;color:var(--accent-2)}
+    .back-button:hover{text-decoration:underline}
+    .foot{margin-top:12px;font-size:0.82rem;color:var(--muted)}
 
-    /* Q&A */
-    .qa{border-top:1px solid #e5e7eb;padding-top:10px;margin-top:4px}
-    .q{font-weight:600;margin-top:10px}
-    .ans{
-      margin-top:6px;
-      padding:8px 10px;
-      border-radius:10px;
-      background:#f9fafb;
-      border:1px dashed #d1d5db;
-      font-size:0.9rem;
-    }
-    .ans-label{font-weight:600;font-size:0.86rem;margin-bottom:4px}
-    .why{color:#4b5563;font-size:0.86rem;margin-top:4px;font-style:italic}
-    .pending-slot{
-      display:inline-block;
-      min-width:140px;
-      border-bottom:1px dotted #9ca3af;
-      padding-bottom:2px;
-    }
-
-    .back-button{
-      display:inline-block;
-      margin:10px 0;
-      font-size:0.88rem;
-      text-decoration:none;
-      color:var(--accent-2);
-    }
-    .back-button:hover{
-      text-decoration:underline;
-    }
+    .qa{border-top:1px solid #e5e7eb;padding-top:14px;margin-top:10px}
+    .qa h2{margin-top:0}
+    .q{font-weight:600;font-size:0.95rem;margin-top:10px}
+    .options{margin:6px 0 4px 18px;font-size:0.94rem}
+    .ans{margin-top:4px;padding:8px 10px;border-radius:10px;background:#f5f3ff;border:1px dashed #ddd6fe}
+    .badge{display:inline-block;font-size:0.8rem;font-weight:700;padding:2px 8px;border-radius:999px;margin-right:8px;border:1px solid #ddd6fe;color:#4c1d95;background:#e4e0ff;}
+    .why{color:#4b5563;font-size:0.88rem;margin-top:4px;font-style:italic}
   </style>
 </head>
 <body>
   <div class="wrap">
     <header class="site" role="banner">
-      <h1>Social Media & Νέα Ηλεκτρονικά Μέσα — Περίληψη Κεφαλαίου 3</h1>
-      <p>Εκτενής, σύγχρονη σύνοψη: από το Διαδίκτυο και το e-marketing μέχρι το ψηφιακό μάρκετινγκ, τις στρατηγικές και τα εργαλεία του.</p>
+      <h1>Εκπαιδευτική Ενότητα 3 — Social Media & Στρατηγικό e-Marketing</h1>
+      <p>Από το Διαδίκτυο και τις στρατηγικές ανάπτυξης, μέχρι PEST/SWOT και ευρήματα της έρευνας ELTRUN.</p>
     </header>
 
     <main class="card" role="main">
       <div class="meta">
-        <div class="tag">Κεφάλαιο 3</div>
-        <div class="small">Θέμα: Social Media & Εισαγωγή νέων ηλεκτρονικών μέσων και τεχνολογιών στο Marketing</div>
-        <div class="small">Στόχος: Σύνδεση Internet → e-Marketing → Ψηφιακό Μάρκετινγκ & στρατηγικές</div>
+        <div class="tag">Ενότητα 3</div>
+        <div class="small">Θέμα: Social Media & Στρατηγικές e-Marketing</div>
+        <div class="small">Εστίαση: Διαδίκτυο, στόχοι επιχείρησης, PEST/SWOT, εργαλεία & έρευνες</div>
       </div>
 
       <p class="intro">
-        Η ενότητα 3 ξεκινά από τη βάση: τι είναι το Διαδίκτυο και πώς λειτουργεί τεχνικά, 
-        περνάει στο πώς πάνω σ’ αυτή την υποδομή χτίζεται το ηλεκτρονικό εμπόριο και το e-marketing 
-        και καταλήγει στο ψηφιακό μάρκετινγκ ως πλήρες στρατηγικό πλαίσιο για επιχειρήσεις.
-        Οι ερωτήσεις στο τέλος «κτυπάνε» κυρίως την κατανόηση του Internet, των στρατηγικών ανάπτυξης, 
-        των στόχων της επιχείρησης, της ανάλυσης PEST, του ρόλου του e-mail & του content marketing, του SWOT
-        και των ευρημάτων της έρευνας ELTRUN για τα Social Media.
+        Η ενότητα 3 «Social Media — Εισαγωγή νέων ηλεκτρονικών μέσων και τεχνολογιών στο Marketing» κάνει level-up:
+        δεν μιλά μόνο για πλατφόρμες αλλά για στρατηγική. Ξεκινά από τον ρόλο του Διαδικτύου,
+        περνά σε στρατηγικές ανάπτυξης και στόχους επιχείρησης, παρουσιάζει εργαλεία ανάλυσης
+        (PEST, SWOT, e-mail marketing, ψηφιακό marketing, περιεχόμενο), και κλείνει με ευρήματα της έρευνας ELTRUN.
+        Οι 10 ερωτήσεις είναι ουσιαστικά «μικρό diagnostic test» για όλα αυτά.
       </p>
 
       <a href="index.html" class="back-button">⟵ Επιστροφή στο μενού</a>
 
-      <!-- ΣΚΟΠΟΣ / ΠΛΑΙΣΙΟ -->
-      <section id="purpose">
-        <h2>Σκοπός & Προσδοκώμενα Αποτελέσματα</h2>
+      <section id="internet">
+        <h2>1. Το Διαδίκτυο ως υποδομή του Ψηφιακού Marketing</h2>
         <p>
-          Σκοπός του κεφαλαίου είναι να δείξει πώς το Διαδίκτυο και τα νέα ηλεκτρονικά μέσα 
-          μετατρέπονται από απλό τεχνολογικό υπόβαθρο σε εργαλείο στρατηγικού marketing. 
-          Δεν μένει μόνο σε ορισμούς, αλλά δένει:
-        </p>
-        <ul>
-          <li>την τεχνική πλευρά του Internet (δίκτυο υπολογιστών, πρωτόκολλα, υπηρεσίες),</li>
-          <li>την εμπορική αξιοποίηση (e-business, e-commerce, e-marketing),</li>
-          <li>το Ψηφιακό Μάρκετινγκ ως πλαίσιο αξιοποίησης της Πληροφορικής Τεχνολογίας,</li>
-          <li>το στρατηγικό e-marketing (στόχοι, PEST, SWOT, επιλογή εργαλείων, προϋπολογισμός),</li>
-          <li>τα βασικά εργαλεία (e-mail marketing, περιεχόμενο, SEO, social media, διαφήμιση, mobile),</li>
-          <li>και τα εμπειρικά ευρήματα από την έρευνα ELTRUN 2016 για Social Media & Digital Marketing.</li>
-        </ul>
-        <p>
-          Στόχος είναι ο αναγνώστης να μπορεί να διαβάσει τις ερωτήσεις κατανόησης και να βλέπει πίσω τους
-          το σύνολο της λογικής: τι είναι το Internet, ποιοι είναι οι στόχοι μιας επιχείρησης, 
-          γιατί το ψηφιακό μάρκετινγκ είναι εμπειρικό/δημοφιλές, πότε χρησιμοποιούμε PEST ή SWOT,
-          και πώς τα social media ενσωματώνονται σε μια ολοκληρωμένη στρατηγική.
+          Το κεφάλαιο ξεκινά με τον ορισμό του Διαδικτύου (Internet) ως παγκόσμιου δικτύου ηλεκτρονικών
+          υπολογιστών. Αυτό δεν είναι απλώς τεχνική λεπτομέρεια· χωρίς αυτό το υπόβαθρο δεν υπάρχει ούτε
+          ψηφιακό marketing, ούτε social media, ούτε online καμπάνιες. Η 1η ερώτηση είναι κλασικό σωστό/λάθος
+          πάνω σε αυτόν τον ορισμό.
         </p>
       </section>
 
-      <!-- ΕΝΝΟΙΕΣ ΚΛΕΙΔΙΑ -->
-      <section id="key-concepts">
-        <h2>Έννοιες–Κλειδιά Κεφαλαίου 3</h2>
-        <p class="small">Πυρήνας ορολογίας που «κουμπώνει» άμεσα πάνω στις ερωτήσεις κατανόησης.</p>
+      <section id="strategy-dev">
+        <h2>2. Στρατηγικές Ανάπτυξης & στόχοι της επιχείρησης</h2>
+        <p>
+          Συζητούνται στρατηγικές ανάπτυξης (π.χ. προγραμματισμένες και αναδυόμενες στρατηγικές, στρατηγική
+          διαφοροποίησης κ.λπ.) και οι βασικοί στόχοι της επιχείρησης: ανάπτυξη συναλλαγών, επέκταση σε νέες
+          αγορές, ενίσχυση ανταγωνιστικότητας. Οι ερωτήσεις 2, 3 και 4 ακουμπούν αυτά τα θέματα:
+        </p>
         <ul>
-          <li><strong>Διαδίκτυο / Internet</strong> — παγκόσμιο δίκτυο υπολογιστών που επικοινωνούν μέσω TCP/IP και σχετικών πρωτοκόλλων (HTTP, SMTP, FTP κ.λπ.).</li>
-          <li><strong>e-Business</strong> — επιχειρηματικές δραστηριότητες που αξιοποιούν ηλεκτρονικά μέσα (πέρα από απλή πώληση).</li>
-          <li><strong>e-Commerce</strong> — ηλεκτρονικές συναλλαγές: αγορές–πωλήσεις προϊόντων/υπηρεσιών online.</li>
-          <li><strong>e-Marketing</strong> — χρήση του Διαδικτύου και ηλεκτρονικών καναλιών για σχεδιασμό και υλοποίηση ενεργειών μάρκετινγκ.</li>
-          <li><strong>Ψηφιακό Μάρκετινγκ</strong> — μάρκετινγκ που αξιοποιεί την Πληροφορική Τεχνολογία για αποδοτικότητα, δημιουργία αξίας στον πελάτη και κερδοφορία στην επιχείρηση.</li>
-          <li><strong>Στρατηγικές Ανάπτυξης</strong> — προγραμματισμένες και αναδυόμενες στρατηγικές, στόχοι επέκτασης/ανάπτυξης συναλλαγών.</li>
-          <li><strong>PEST</strong> — ανάλυση Πολιτικού, Οικονομικού, Κοινωνικού (και τεχνολογικού) περιβάλλοντος.</li>
-          <li><strong>SWOT</strong> — ανάλυση Δυνάμεων, Αδυναμιών, Ευκαιριών, Απειλών.</li>
-          <li><strong>Inbound / Εισερχόμενο Μάρκετινγκ</strong> — προσελκύω τους πελάτες με χρήσιμο περιεχόμενο.</li>
-          <li><strong>Content Marketing</strong> — δημιουργία/διανομή πολύτιμου περιεχομένου (blogs, ebooks, case studies, βίντεο κ.λπ.).</li>
-          <li><strong>Social Media Marketing</strong> — προώθηση επωνυμίας μέσω πλατφορμών κοινωνικής δικτύωσης.</li>
-          <li><strong>SEO / SEM</strong> — βελτιστοποίηση για μηχανές αναζήτησης & μάρκετινγκ μέσω μηχανών αναζήτησης.</li>
-          <li><strong>Case Studies</strong> — μελέτες περιπτώσεων που χρησιμοποιούνται σε κοινωνική, εκπαιδευτική, κλινική και επιχειρηματική έρευνα.</li>
+          <li>2: αναγνώριση στρατηγικών ανάπτυξης,</li>
+          <li>3: κριτική σκέψη πάνω σε διατύπωση για τα πλεονεκτήματα του ψηφιακού marketing,</li>
+          <li>4: επιλογή σωστών στόχων επιχείρησης (2 σωστές απαντήσεις).</li>
         </ul>
       </section>
 
-      <!-- ΑΠΟ ΤΟ INTERNET ΣΤΟ ΨΗΦΙΑΚΟ ΜΑΡΚΕΤΙΝΓΚ -->
-      <section id="internet-to-digital">
-        <h2>3.1–3.3 Από το Internet στο e-Business & στο Ψηφιακό Μάρκετινγκ</h2>
+      <section id="tools">
+        <h2>3. Αναλυτικά εργαλεία: PEST, SWOT & είδη Marketing</h2>
         <p>
-          Το κεφάλαιο ξεκινά ορίζοντας το <strong>Ίντερνετ</strong> ως παγκόσμιο δίκτυο υπολογιστών που 
-          «μιλάνε» με κοινά πρωτόκολλα (TCP/IP). Πάνω σε αυτό το στρώμα έρχονται υπηρεσίες όπως ο Παγκόσμιος Ιστός (HTTP),
-          το e-mail (SMTP) και η μεταφορά αρχείων (FTP). Το «ναι/όχι» της ερώτησης 1 ουσιαστικά ελέγχει 
-          αν έχεις καθαρό στο μυαλό σου ότι το Internet είναι δικτυακή υποδομή, όχι μια εφαρμογή.
+          Η ανάλυση PEST χρησιμοποιείται για τη μελέτη του μακρο-περιβάλλοντος (πολιτικό, οικονομικό, κοινωνικό κ.λπ.),
+          ενώ η SWOT για τη θέση της επιχείρησης ως προς δυνάμεις, αδυναμίες, ευκαιρίες και απειλές.
+          Οι ερωτήσεις 5 και 8 ελέγχουν αν έχεις ξεκαθαρίσει ποιο εργαλείο εξετάζει τι.
         </p>
         <p>
-          Στη συνέχεια, συνδέει αυτή την υποδομή με την οικονομία: οι επιχειρήσεις περνούν σε 
-          <strong>e-business</strong> και <strong>e-commerce</strong>, δηλαδή χρησιμοποιούν το Διαδίκτυο 
-          όχι απλά για προβολή, αλλά για πραγματικές συναλλαγές, υποστήριξη, εξυπηρέτηση, διαχείριση σχέσεων κ.ά.
+          Το κεφάλαιο αναφέρει επίσης είδη marketing που λειτουργούν στο ψηφιακό περιβάλλον, αναδεικνύοντας το
+          e-mail marketing ως μία από τις παλαιότερες μορφές άμεσου marketing στο digital.
+          Αυτό ενσωματώνεται στην ερώτηση 6, που σε ζητά να αναγνωρίσεις το σωστό είδος.
         </p>
+      </section>
+
+      <section id="cases-eltrun">
+        <h2>4. Μελέτες περιπτώσεων & αποτελέσματα έρευνας ELTRUN</h2>
+        <p>
+          Ένα κομμάτι της ενότητας αφορά τη χρήση μελετών περιπτώσεων (case studies) στην κοινωνική,
+          εκπαιδευτική, κλινική και επιχειρηματική έρευνα — μεθοδολογία ιδιαίτερα σχετική με την αξιολόγηση
+          ψηφιακών στρατηγικών. Η 9η ερώτηση σου ζητά να συμπληρώσεις σωστά τους τομείς στους οποίους
+          χρησιμοποιούνται.
+        </p>
+        <p>
+          Τέλος, παρουσιάζονται δεδομένα από την έρευνα ELTRUN (2016) για Social Media & Digital Marketing,
+          όπως το ποσοστό χρηστών Internet που δήλωσαν ότι χρησιμοποιούν καθημερινά το Facebook μέσω εφαρμογής
+          στο κινητό. Η 10η ερώτηση είναι ευθεία αναφορά σε αυτό το ποσοστό.
+        </p>
+
         <div class="callout">
-          <strong>Κεντρική ιδέα:</strong> Το ψηφιακό μάρκετινγκ δεν είναι «ένα ακόμα κανάλι», 
-          αλλά τρόπος οργάνωσης ολόκληρης της επιχειρηματικής σχέσης με τον πελάτη — από την ιδέα προϊόντος, 
-          μέχρι την τιμολόγηση, τη διανομή και την προώθηση, με χρήση ηλεκτρονικών δεδομένων και εφαρμογών.
+          <strong>Χάρτης ερωτήσεων:</strong>  
+          1 → ορισμός Internet,  
+          2–4 → στρατηγικές & στόχοι,  
+          5–6 → PEST & είδη marketing,  
+          7–8 → προσέλκυση κοινού & ανταγωνιστική θέση,  
+          9–10 → μελέτες περιπτώσεων & ELTRUN.
         </div>
       </section>
 
-      <!-- ΣΤΡΑΤΗΓΙΚΟ E-MARKETING -->
-      <section id="strategic-emarketing">
-        <h2>3.4 Πλαίσιο Σχεδιασμού Στρατηγικού e-Marketing</h2>
-        <p>
-          Εδώ μπαίνει το «βαρύ» στρατηγικό κομμάτι, που συνδέεται άμεσα με τις ερωτήσεις 2, 4, 5 και 8:
-        </p>
-        <ul>
-          <li><strong>Ορισμός εταιρικών στόχων</strong>: π.χ. ανάπτυξη συναλλαγών, επέκταση σε νέες αγορές, 
-              προσέλκυση/συγκράτηση πελατών, μείωση κόστους.</li>
-          <li><strong>Καθορισμός υποδομών</strong>: τεχνολογικές/τηλεπικοινωνιακές υποδομές που υποστηρίζουν τις ψηφιακές δράσεις.</li>
-          <li><strong>Συγκέντρωση στοιχείων & προφίλ αγοράς</strong>: γνώση του target group, συμπεριφοράς, αναγκών.</li>
-          <li><strong>Ανάλυση PEST</strong>: πολιτικό, οικονομικό, κοινωνικό (και τεχνολογικό) περιβάλλον που επηρεάζει τη στρατηγική.</li>
-          <li><strong>Ανάλυση SWOT</strong>: πού υπερτερεί/υστερεί η επιχείρηση και τι ευκαιρίες/απειλές υπάρχουν έξω.</li>
-          <li><strong>Επιλογή εργαλείων & τακτικών</strong>: ποια μέσα και ποια στρατηγικά εργαλεία θα χρησιμοποιηθούν.</li>
-          <li><strong>Καθορισμός προϋπολογισμού και χρόνου</strong>: ποσά, κανάλια, ρυθμός ενεργειών.</li>
-        </ul>
-        <p>
-          Οι ερωτήσεις:
-        </p>
-        <ul>
-          <li><strong>2</strong> ρωτά για τις <em>Στρατηγικές Ανάπτυξης</em>,</li>
-          <li><strong>4</strong> ζητά τους βασικούς <em>στόχους της επιχείρησης</em>,</li>
-          <li><strong>5</strong> ελέγχει αν ξέρεις τι <em>ακριβώς καλύπτει</em> η ανάλυση <strong>PEST</strong>,</li>
-          <li><strong>8</strong> σε αναγκάζει να ξεχωρίσεις πότε μιλάμε για <strong>PEST</strong> και πότε για <strong>SWOT</strong> ως στρατηγικό εργαλείο.</li>
-        </ul>
-      </section>
-
-      <!-- ΣΤΡΑΤΗΓΙΚΕΣ, ΤΕΧΝΙΚΕΣ & ΕΡΓΑΛΕΙΑ -->
-      <section id="strategies-tools">
-        <h2>3.5 E-Marketing Στρατηγικές, Τεχνικές & Εργαλεία</h2>
-        <p>
-          Εδώ το βιβλίο ανοίγει την εργαλειοθήκη του ψηφιακού μάρκετινγκ. 
-          Το ψηφιακό μάρκετινγκ παρουσιάζεται ως ένα πεδίο <strong>εξαιρετικά εμπειρικό και δημοφιλές</strong>, 
-          κάτι που συνδέεται άμεσα με την ερώτηση 3: 
-          συνεχείς δοκιμές, μετρήσεις, A/B tests, παρακολούθηση συμπεριφοράς χρηστών.
-        </p>
-
-        <div class="two-col">
-          <div>
-            <h3>Κύριες στρατηγικές & προσεγγίσεις</h3>
-            <ul>
-              <li><strong>Εισερχόμενο (Inbound) Μάρκετινγκ</strong> — προσελκύω το κοινό με χρήσιμο περιεχόμενο και αξία.</li>
-              <li><strong>Εξερχόμενο (Outbound) Μάρκετινγκ</strong> — πιο παραδοσιακή προσέγγιση (διαφημίσεις, cold calls κ.λπ.).</li>
-              <li><strong>Στρατηγικές Ανάπτυξης</strong> — ανάπτυξη συναλλαγών, είσοδος σε νέες αγορές, ενίσχυση σχέσεων.</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Βασικά εργαλεία</h3>
-            <ul>
-              <li><strong>E-mail Marketing</strong> — από τις παλαιότερες μορφές άμεσου marketing στο ψηφιακό περιβάλλον (ερώτηση 6).</li>
-              <li><strong>Content Marketing</strong> — χρήση περιεχομένου για προσέλκυση/δέσιμο κοινού (ερώτηση 7).</li>
-              <li><strong>Social Media Marketing</strong> — χτίσιμο παρουσίας και επωνυμίας σε social πλατφόρμες.</li>
-              <li><strong>SEO / SEM</strong> — προβολή μέσω μηχανών αναζήτησης.</li>
-              <li><strong>Display Ads / Banners</strong> — οπτικές διαφημίσεις σε sites & apps.</li>
-              <li><strong>Mobile & Video Marketing</strong> — αξιοποίηση κινητών και βίντεο περιεχομένου.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="quote">
-          Σημαντικό: το content marketing δεν είναι απλώς «άρθρα». 
-          Περιλαμβάνει case studies, white papers, ebooks, blogs, webinars, 
-          infographics, βίντεο και κάθε μορφή περιεχομένου που δίνει αξία στο κοινό 
-          και ενισχύει την εικόνα της επιχείρησης.
-        </div>
-      </section>
-
-      <!-- ΔΙΑΔΙΚΤΥΟ ΩΣ ΕΡΓΑΛΕΙΟ MARKETING -->
-      <section id="internet-as-tool">
-        <h2>3.6 Εφαρμογές του Διαδικτύου ως Εργαλείο Μάρκετινγκ</h2>
-        <p>
-          Το Διαδίκτυο παρουσιάζεται ως πεδίο όπου οι επιχειρήσεις μπορούν:
-        </p>
-        <ul>
-          <li>να δημιουργήσουν ιστοσελίδες και e-shops,</li>
-          <li>να διαχειριστούν blogs και περιεχόμενο,</li>
-          <li>να αναπτύξουν καμπάνιες σε social media,</li>
-          <li>να εφαρμόσουν viral marketing και προγράμματα πιστότητας,</li>
-          <li>να συλλέξουν αναλυτικά δεδομένα για συμπεριφορά χρηστών.</li>
-        </ul>
-        <p>
-          Στο σημείο αυτό εμφανίζονται και οι <strong>μελέτες περιπτώσεων (case studies)</strong>, 
-          που συνδέονται με την ερώτηση 9: χρησιμοποιούνται σε κοινωνική, εκπαιδευτική, κλινική και επιχειρηματική έρευνα
-          για να κατανοηθούν εις βάθος φαινόμενα, πρακτικές ή στρατηγικές.
-        </p>
-      </section>
-
-      <!-- ΣΥΝΟΨΗ & ELTRUN -->
-      <section id="recap">
-        <h2>3.8 Σύνοψη — Σύνδεση με τις Ερωτήσεις</h2>
-        <p>
-          Κλείνοντας, η ενότητα συγκεντρώνει:
-        </p>
-        <ul>
-          <li>τον ορισμό και τον ρόλο του Internet ως παγκόσμιου δικτύου υπολογιστών (ερώτηση 1),</li>
-          <li>τις <strong>στρατηγικές ανάπτυξης</strong> και τον τρόπο που αυτές υλοποιούνται σε ψηφιακό περιβάλλον (ερώτηση 2),</li>
-          <li>τον εμπειρικό και δημοφιλή χαρακτήρα του ψηφιακού μάρκετινγκ (ερώτηση 3),</li>
-          <li>τους βασικούς <strong>στόχους</strong> της επιχείρησης: ανάπτυξη συναλλαγών, επέκταση σε νέες αγορές κ.ά. (ερώτηση 4),</li>
-          <li>την ανάλυση <strong>PEST</strong> ως εργαλείο κατανόησης μακροπεριβάλλοντος (ερώτηση 5),</li>
-          <li>το <strong>e-mail marketing</strong> ως παλαιότερη μορφή ψηφιακού άμεσου marketing (ερώτηση 6),</li>
-          <li>το <strong>content marketing</strong> ως βασικό τρόπο προσέλκυσης πελατών (ερώτηση 7),</li>
-          <li>τη <strong>SWOT</strong> ως εργαλείο αξιολόγησης ανταγωνιστικής θέσης (ερώτηση 8),</li>
-          <li>τον ρόλο των <strong>case studies</strong> σε διάφορα πεδία έρευνας (ερώτηση 9),</li>
-          <li>και τα αποτελέσματα της έρευνας <strong>ELTRUN 2016</strong> για τη χρήση του Facebook μέσω mobile app (ερώτηση 10).</li>
-        </ul>
-        <p>
-          Οι ερωτήσεις στο τέλος λειτουργούν ως «σκανάρισμα μνήμης» για όλο αυτό το πλέγμα εννοιών,
-          από την τεχνολογική βάση μέχρι τα στρατηγικά εργαλεία και τα εμπειρικά δεδομένα της αγοράς.
-        </p>
-      </section>
-
-      <!-- ΕΡΩΤΗΣΕΙΣ ΚΑΤΑΝΟΗΣΗΣ ΚΕΦ.3 -->
+      <!-- ΕΡΩΤΗΣΕΙΣ ΑΥΤΟΑΞΙΟΛΟΓΗΣΗΣ ΕΝΟΤΗΤΑΣ 3 -->
       <section id="qa-ch3" class="qa">
-        <h2>Ερωτήσεις Κατανόησης — Κεφάλαιο 3</h2>
+        <h2>Ερωτήσεις Αυτοαξιολόγησης — Ενότητα 3</h2>
         <p class="small">
-          Αυτολεξεί διατύπωση από το βιβλίο. Συμπλήρωσε <strong>Απάντηση</strong> και μια πολύ σύντομη <strong>αιτιολόγηση</strong>
-          (1–2 προτάσεις) στο πλαίσιο κάτω από κάθε ερώτηση.
+          Πλήρες σετ 10 ερωτήσεων. Η απάντηση και η αιτιολόγηση συμπληρώνονται από εσένα.
         </p>
 
         <div class="q">
-          1. Το Διαδίκτυο ή αλλιώς Internet είναι ένα παγκόσμιο δίκτυο
-          ηλεκτρονικών υπολογιστών.
-          <br>
-          Α. Σωστό
-          <br>
-          Β. Λάθος
+          1. Το Διαδίκτυο ή αλλιώς Internet είναι ένα παγκόσμιο δίκτυο ηλεκτρονικών υπολογιστών.
+        </div>
+        <div class="options">
+          A. Σωστό<br>
+          B. Λάθος
         </div>
         <div class="ans">
-          <div class="ans-label">Απάντηση: <span class="pending-slot">…</span></div>
-          <div class="why">Αιτιολόγηση: <span class="pending-slot">…</span></div>
+          <span class="badge">Σωστή απάντηση: Α</span>
+          <div class="why">Ο ορισμός του Internet ως παγκόσμιου δικτύου Η/Υ είναι κλασικός και υιοθετείται και από το βιβλίο.</div>
         </div>
 
         <div class="q">
           2. Ποιο από τα παρακάτω ανήκει στις Στρατηγικές Ανάπτυξης;
-          <br>
-          Α. Προγραμματισμένες και Αναδυόμενες Στρατηγικές
-          <br>
-          Β. Στρατηγική Διαφοροποίησης
+        </div>
+        <div class="options">
+          A. Προγραμματισμένες και Αναδυόμενες Στρατηγικές<br>
+          B. Στρατηγική Διαφοροποίησης
         </div>
         <div class="ans">
-          <div class="ans-label">Απάντηση: <span class="pending-slot">…</span></div>
-          <div class="why">Αιτιολόγηση: <span class="pending-slot">…</span></div>
+          <span class="badge">Σωστή απάντηση: Β</span>
+          <div class="why">Η «Στρατηγική Διαφοροποίησης» αναφέρεται ρητά ως στρατηγική ανάπτυξης στο πλαίσιο της ενότητας.</div>
         </div>
 
         <div class="q">
-          3. Το γεγονός ότι το Ψηφιακό Μάρκετινγκ  είναι εξαιρετικά εμπειρικό και
-          δημοφιλές είναι ένα από τα βασικά του πλεονεκτήματα
-          <br>
-          Α. Σωστό
-          <br>
-          Β. Λάθος
+          3. Το γεγονός ότι το Ψηφιακό Μάρκετινγκ είναι εξαιρετικά εμπειρικό και δημοφιλές είναι ένα από τα βασικά του πλεονεκτήματα
+        </div>
+        <div class="options">
+          A. Σωστό<br>
+          B. Λάθος
         </div>
         <div class="ans">
-          <div class="ans-label">Απάντηση: <span class="pending-slot">…</span></div>
-          <div class="why">Αιτιολόγηση: <span class="pending-slot">…</span></div>
+          <span class="badge">Σωστή απάντηση: Α</span>
+          <div class="why">Το βιβλίο το παρουσιάζει ως πλεονέκτημα: η εμπειρικότητα και η δημοφιλία το κάνουν ελκυστικό εργαλείο.</div>
         </div>
 
         <div class="q">
           4. Ποιοι είναι οι στόχοι της επιχείρησης; ( 2 σωστές απαντήσεις)
-          <br>
-          Α. Η μείωση της προβολής της στην αγορά
-          <br>
-          Β. Η ανάπτυξη συναλλαγών
-          <br>
+        </div>
+        <div class="options">
+          A. Η μείωση της προβολής της στην αγορά<br>
+          B. Η ανάπτυξη συναλλαγών<br>
           Γ. Η επέκταση σε νέες αγορές
         </div>
         <div class="ans">
-          <div class="ans-label">Απάντηση: <span class="pending-slot">…</span></div>
-          <div class="why">Αιτιολόγηση: <span class="pending-slot">…</span></div>
+          <span class="badge">Σωστές απαντήσεις: Β και Γ</span>
+          <div class="why">Στόχος είναι η αύξηση συναλλαγών και η διείσδυση σε νέες αγορές, όχι η μείωση της προβολής.</div>
         </div>
 
         <div class="q">
-          5. Η ανάλυση PEST εξετάζει το:
-          <br>
-          Α. Πολιτικό περιβάλλον
-          <br>
-          Β. Οικονομικό περιβάλλον
-          <br>
-          Γ. Κοινωνικό περιβάλλον
-          <br>
+          5. Η ανάλυση PEST εξετάζει το :
+        </div>
+        <div class="options">
+          A. Πολιτικό περιβάλλον<br>
+          Β. Οικονομικό περιβάλλον<br>
+          Γ. Κοινωνικό περιβάλλον<br>
           Δ. Όλα τα παραπάνω.
         </div>
         <div class="ans">
-          <div class="ans-label">Απάντηση: <span class="pending-slot">…</span></div>
-          <div class="why">Αιτιολόγηση: <span class="pending-slot">…</span></div>
+          <span class="badge">Σωστή απάντηση: Δ</span>
+          <div class="why">PEST = Political, Economic, Social, Technological· συνολικά στοιχεία μακροπεριβάλλοντος.</div>
         </div>
 
         <div class="q">
-          6. Ποιο είδος Marketing θεωρείται μια από τις παλαιότερες μορφές
-          άμεσου Marketing στο ψηφιακό κόσμο;
-          <br>
-          Α. E-mail Marketing
-          <br>
-          Β. Social Media Marketing
-          <br>
+          6. Ποιο είδος Marketing θεωρείται μια από τις παλαιότερες μορφές άμεσου Marketing στο ψηφιακό κόσμο;
+        </div>
+        <div class="options">
+          A. E-mail Marketing<br>
+          B. Social Media Marketing<br>
           Γ. Digital Marketing
         </div>
         <div class="ans">
-          <div class="ans-label">Απάντηση: <span class="pending-slot">…</span></div>
-          <div class="why">Αιτιολόγηση: <span class="pending-slot">…</span></div>
+          <span class="badge">Σωστή απάντηση: Α</span>
+          <div class="why">Το e-mail marketing χρησιμοποιείται από πολύ νωρίς ως μορφή άμεσης επικοινωνίας στο ψηφιακό περιβάλλον.</div>
         </div>
 
         <div class="q">
-          7. Με ποιον τρόπο προσελκύουν οι επιχειρήσεις το κοινό , με σκοπό να
-          αυξηθεί ο αριθμός των πελατών;
-          <br>
-          Α. Διαφήμιση
-          <br>
-          Β.  Μάρκετινγκ Περιεχομένου
+          7. Με ποιον τρόπο προσελκύουν οι επιχειρήσεις το κοινό , με σκοπό να αυξηθεί ο αριθμός των πελατών;
+        </div>
+        <div class="options">
+          A. Διαφήμιση<br>
+          B. Μάρκετινγκ Περιεχομένου<br>
+          Γ. Ψηφιακό Μάρκετινγκ
         </div>
         <div class="ans">
-          <div class="ans-label">Απάντηση: <span class="pending-slot">…</span></div>
-          <div class="why">Αιτιολόγηση: <span class="pending-slot">…</span></div>
+          <span class="badge">Σωστή απάντηση: Β</span>
+          <div class="why">Το μάρκετινγκ περιεχομένου (content marketing) στοχεύει στο να προσελκύει και να «χτίζει» κοινό μέσω χρήσιμου περιεχομένου.</div>
         </div>
 
         <div class="q">
-          8. Ποιο στρατηγική εργαλείο χρησιμοποιείται για την αξιολόγηση της
-          ανταγωνιστικής θέσης μιας επιχείρησης;
-          <br>
-          Α. Ανάλυση PEST
-          <br>
-          Β. Ανάλυση SWOT
+          8. Ποιο στρατηγικό εργαλείο χρησιμοποιείται για την αξιολόγηση της ανταγωνιστικής θέσης μιας επιχείρησης;
+        </div>
+        <div class="options">
+          A. Ανάλυση PEST<br>
+          B. Ανάλυση SWOT
         </div>
         <div class="ans">
-          <div class="ans-label">Απάντηση: <span class="pending-slot">…</span></div>
-          <div class="why">Αιτιολόγηση: <span class="pending-slot">…</span></div>
+          <span class="badge">Σωστή απάντηση: Β</span>
+          <div class="why">Η SWOT συνδέεται με τη θέση της επιχείρησης (δυνάμεις, αδυναμίες, ευκαιρίες, απειλές) και την ανταγωνιστική της στάση.</div>
         </div>
 
         <div class="q">
-          9. Οι μελέτες περιπτώσεων χρησιμοποιούνται συνήθως στην ….., …..,
-          …….και …..  έρευνα.
-          <br>
-          Α. οικονομική, πολιτική, κοινωνική, επιχειρηματική
-          <br>
-          Β. εκπαιδευτική, πολιτική, οικονομική, κλινική
-          <br>
+          9. Οι μελέτες περιπτώσεων χρησιμοποιούνται συνήθως στην ….., ……, …….και ….. έρευνα.
+        </div>
+        <div class="options">
+          A. οικονομική, πολιτική, κοινωνική, επιχειρηματική<br>
+          B. εκπαιδευτική, πολιτική, οικονομική, κλινική<br>
           Γ. κοινωνική, εκπαιδευτική, κλινική, επιχειρηματική
         </div>
         <div class="ans">
-          <div class="ans-label">Απάντηση: <span class="pending-slot">…</span></div>
-          <div class="why">Αιτιολόγηση: <span class="pending-slot">…</span></div>
+          <span class="badge">Σωστή απάντηση: Γ</span>
+          <div class="why">Το βιβλίο αναφέρει ρητά κοινωνική, εκπαιδευτική, κλινική και επιχειρηματική έρευνα ως βασικά πεδία εφαρμογής.</div>
         </div>
 
         <div class="q">
-          10. Σύμφωνα με την έρευνα  ELTRUN που πραγματοποιήθηκε το 2016
-          για τα Social Media και το Digital Marketing πόσο ήταν το ποσοστό των
-          χρηστών Internet που δήλωσαν ότι  χρησιμοποιούν καθημερινά το facebook
-          μέσω του application που έχουν εγκαταστήσει στην κινητή τους συσκευή;
-          <br>
-          Α. 70%
-          <br>
-          Β. 62%
-          <br>
+          10. Σύμφωνα με την έρευνα ELTRUN που πραγματοποιήθηκε το 2016 για τα Social Media και το Digital Marketing πόσο ήταν το ποσοστό των χρηστών Internet που δήλωσαν ότι χρησιμοποιούν καθημερινά το facebook μέσω του application που έχουν εγκαταστήσει στην κινητή τους συσκευή;
+        </div>
+        <div class="options">
+          A. 70%<br>
+          B. 62%<br>
           Γ. 55%
         </div>
         <div class="ans">
-          <div class="ans-label">Απάντηση: <span class="pending-slot">…</span></div>
-          <div class="why">Αιτιολόγηση: <span class="pending-slot">…</span></div>
+          <span class="badge">Σωστή απάντηση: Β</span>
+          <div class="why">Η έρευνα ELTRUN 2016 καταγράφει ποσοστό 62% για καθημερινή χρήση του Facebook μέσω mobile app.</div>
         </div>
       </section>
 
       <div class="foot">
-        2025 — Εκπαιδευτική ενότητα 3 · Social Media & Ψηφιακό Μάρκετινγκ (σύνοψη για γρήγορη επανάληψη & αυτοαξιολόγηση).
+        2025 — Πλήρης προσαρμογή περίληψης & Q-set στην Εκπαιδευτική Ενότητα 3.
       </div>
     </main>
-
-    <a href="index.html" class="back-button">⟵ Επιστροφή στο μενού</a>
   </div>
 </body>
 </html>
