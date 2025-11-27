@@ -139,7 +139,7 @@
     </div>
 
     <div class="chapter">
-      <button onclick="openViewer(' https://forms.gle/4toC6ticLVq2kgDa7')">Κεφ3. Τέστ</button>
+      <button onclick="openViewer('https://forms.gle/4toC6ticLVq2kgDa7')">Κεφ3. Τέστ</button>
       <button onclick="openViewer('enotita3.html')">Κεφ3. Θεωρία</button>
     </div>
 
@@ -157,6 +157,7 @@
       <button onclick="openViewer('https://forms.gle/dXDwj32csD6krg5eA')">Κεφ6. Τέστ</button>
       <button onclick="openViewer('enotita6.html')">Κεφ6. Θεωρία</button>
     </div>
+
     <div class="chapter">
       <button onclick="openViewer('https://www.youtube.com/watch?v=hn-5PZ2qY5M')">Βίντεο 1</button>
       <button onclick="openViewer('https://www.youtube.com/watch?v=pbsmEaJaRM8')">Βίντεο 2</button>
@@ -169,16 +170,63 @@
 
   <div id="viewerContainer">
     <button id="closeBtn" onclick="closeViewer()">✖</button>
-    <iframe id="viewer" src=""></iframe>
+    <iframe
+      id="viewer"
+      src=""
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+      referrerpolicy="strict-origin-when-cross-origin"
+    ></iframe>
   </div>
 
   <script>
-    function openViewer(src) {
-      if (src === '#' || !src) return;
-      document.getElementById("viewer").src = src;
-      document.getElementById("viewerContainer").style.display = "block";
-      window.scrollTo(0,0);
+    function toYouTubeEmbedUrl(rawUrl) {
+      const urlStr = (rawUrl || "").trim();
+      try {
+        const u = new URL(urlStr);
+
+        const host = u.hostname.replace(/^www\./, "");
+
+        // youtu.be/<id>
+        if (host === "youtu.be") {
+          const id = u.pathname.split("/").filter(Boolean)[0];
+          if (id) return `https://www.youtube.com/embed/${id}`;
+        }
+
+        // youtube.com/watch?v=<id>
+        if (host === "youtube.com" || host === "m.youtube.com") {
+          if (u.pathname === "/watch") {
+            const id = u.searchParams.get("v");
+            if (id) return `https://www.youtube.com/embed/${id}`;
+          }
+          // youtube.com/embed/<id>
+          if (u.pathname.startsWith("/embed/")) {
+            return `https://www.youtube.com${u.pathname}`;
+          }
+          // youtube.com/shorts/<id>
+          if (u.pathname.startsWith("/shorts/")) {
+            const id = u.pathname.split("/").filter(Boolean)[1];
+            if (id) return `https://www.youtube.com/embed/${id}`;
+          }
+        }
+
+        return urlStr;
+      } catch (e) {
+        return urlStr;
+      }
     }
+
+    function openViewer(src) {
+      const cleaned = (src || "").trim();
+      if (cleaned === "#" || !cleaned) return;
+
+      const embedSrc = toYouTubeEmbedUrl(cleaned);
+
+      document.getElementById("viewer").src = embedSrc;
+      document.getElementById("viewerContainer").style.display = "block";
+      window.scrollTo(0, 0);
+    }
+
     function closeViewer() {
       document.getElementById("viewerContainer").style.display = "none";
       document.getElementById("viewer").src = "";
@@ -187,12 +235,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
